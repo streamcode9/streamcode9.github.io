@@ -16,11 +16,13 @@
           border: 1px dashed red;
           flex-grow: 1;
         }
+        #fps { position: fixed; bottom: 0; right: 0; }
     </style>
 </head>
 <body>
     <img src="img/shortparis.png" />
     <canvas id="cnvs"></canvas>
+    <div id="fps"></div>
 
     <script>
  
@@ -40,8 +42,25 @@ function main() {
   // Clear the color buffer with specified clear color
   gl.clear(gl.COLOR_BUFFER_BIT);
 }
+        
+function drawFPS(x) {
+  document.querySelector("#fps").innerHTML = x;
+}
 
-window.onload = main;
+function measure() {
+	let then = performance.now();
+
+	const loop = () => {
+        const now = performance.now();
+        const elapsed = now - then;
+	    then = now;	
+        if (now % 9 === 0) drawFPS((1000 / elapsed).toPrecision(3));
+        requestAnimationFrame(loop);
+	};
+    requestAnimationFrame(loop);
+}
+
+window.onload = () => { main(); measure(); }
 
     </script>
 </body>
