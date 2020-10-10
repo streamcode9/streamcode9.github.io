@@ -11,10 +11,12 @@
           background-color: black;
           display: flex;
           flex-direction: column;
+	  margin: 0;
         }
+	img { width: 248px; height: 115px; }
         canvas {
           border: 1px dashed red;
-          flex-grow: 1;
+          height: calc(100vh - 115px - 2px);
         }
         #fps { position: fixed; bottom: 0; right: 0; }
     </style>
