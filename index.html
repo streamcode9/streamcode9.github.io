@@ -1,56 +1,55 @@
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="streamcode9" />
-    <title>streamcode9</title>
-    <style>
-        body {
-          background-color: black;
-	  margin: 0;
-          width:100vw; height:100vh;
-        }
-	img { width: 248px; height: 115px; }
-        svg {
-          border: 1px dashed red;
-          height: calc(100vh - 115px - 2px);
-          width: calc(100vw - 2px);
-        }
-        #fps { position: fixed; bottom: 0; right: 0; color: white; }
-    </style>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="streamcode9" />
+<title>streamcode9</title>
+<style>
+body {
+  background-color: black;
+  margin: 0;
+  width:100vw; height:100vh;
+}
+img { width: 248px; height: 115px; }
+svg {
+  border: 1px dashed red;
+  height: calc(100vh - 115px - 2px);
+  width: calc(100vw - 2px);
+}
+#fps { position: fixed; bottom: 0; right: 0; color: white; }
+</style>
 </head>
 <body>
-    <img src="img/shortparis.png" />
+<img src="img/shortparis.png" />
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-<rect width="100" height="100" fill="transparent" stroke="#0000ff" />
-<text x="0" y="0" font-size="1rem" fill="#ffffff">0,0</text>
-<text x="0" y="100" font-size="1rem" fill="#ffffff">0,100</text>
-<text x="100" y="0" font-size="1rem" fill="#ffffff">100,0</text>
-<text x="100" y="100" font-size="1rem" fill="#ffffff">100,100</text>
+<rect width="100" height="100" fill="transparent" stroke="blue" />
+<text x="0" y="0" font-size="1rem" fill="white">0,0</text>
+<text x="0" y="100" font-size="1rem" fill="white">0,100</text>
+<text x="100" y="0" font-size="1rem" fill="white">100,0</text>
+<text x="100" y="100" font-size="1rem" fill="white">100,100</text>
 </svg>
-    <div id="fps"></div>
-
-    <script>
+<div id="fps"></div>
+<script>
 function drawFPS(x) {
   document.querySelector("#fps").innerHTML = x;
 }
 
 function measure() {
-	let then = performance.now();
+  let then = performance.now();
 
-	const loop = () => {
-        const now = performance.now();
-        const elapsed = now - then;
-	    then = now;	
-        if (now % 9 === 0) drawFPS((1000 / elapsed).toPrecision(3));
-        requestAnimationFrame(loop);
-	};
+  const loop = () => {
+    const now = performance.now();
+    const elapsed = now - then;
+    then = now;	
+    if (now % 9 === 0) drawFPS((1000 / elapsed).toPrecision(3));
     requestAnimationFrame(loop);
+  };
+  requestAnimationFrame(loop);
 }
 
 window.onload = () => { measure(); }
 
-    </script>
+</script>
 </body>
