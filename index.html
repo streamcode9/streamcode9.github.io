@@ -38,9 +38,7 @@ svg > text { font-size: 0.25rem; fill: white; }
 </svg>
 <div id="fps"></div>
 <script>
-const drawFPS = () => {
-  document.querySelector("#fps").innerHTML = x;
-}
+const drawFPS = x => { document.querySelector("#fps").innerHTML = x; }
 
 const measure = () => {
   let then = performance.now();
@@ -65,9 +63,12 @@ const itemsTree = [
 ];
 
 const main = () => {
+  const offsetY = 15;
   const svg = document.getElementById('svg');
   for (let i = 0; i < itemsTree.length; i++) {
-    svg.innerHTML += `<text x="0" y="${i * 5}">${itemsTree[i].items[0]}</text>`;
+    let y = offsetY + i * 5;
+    svg.innerHTML += `<text x="0" y="${y}">${itemsTree[i].txt}</text>`;
+    svg.innerHTML += `<text x="20" y="${y}">${itemsTree[i].items[0]}</text>`;
   }
 };
 
