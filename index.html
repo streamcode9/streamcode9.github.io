@@ -31,19 +31,10 @@ svg > text { font-size: 0.25rem; fill: white; }
 <img src="img/spongebob.png" />
 <img src="img/octonauts.png" />
 </div>
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg id="svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 <rect width="100" height="100" fill="transparent" stroke="blue" />
 <text x="0" y="5">🤯 ➫ 🤬 ➫ 😭 ➫ 🤒 ➫ ☠️</text>
 <text x="0" y="10">🏋️‍ ➫ 🤡 ➫ ☯️</text>
-<text x="0" y="15">Физика: фотон/волна, квантовая теория, постоянная Планка, эффект замедления времени, гравитация</text>
-<text x="0" y="20">Рерих Горный пейзаж</text>
-<text x="0" y="25">ОксиМирон Монеточка Канцлер Ги Радик Тюлюш Высоцкий</text>
-<text x="0" y="30">Nordic countries, Japan, Italy</text>
-<text x="0" y="35"></text>
-<text x="0" y="40">Гоголь Дуглас Адамс Толкиен Пелевин</text>
-<text x="0" y="45">Пиксели С C++ Rust SDL Go Erl Lisp F#</text>
-<text x="0" y="50">System F Formality</text>
-<text x="100" y="100">?</text>
 </svg>
 <div id="fps"></div>
 <script>
@@ -64,7 +55,21 @@ const measure = () => {
   requestAnimationFrame(loop);
 }
 
-const main = () => {};
+const itemsTree = [
+  {txt: 'books',  items: ['Гоголь Дуглас Адамс Толкиен Пелевин']},
+  {txt: 'music',  items: ['ОксиМирон Монеточка Канцлер Ги Радик Тюлюш Высоцкий']},
+  {txt: 'физика', items: ['фотон/волна, квантовая теория, постоянная Планка, эффект замедления времени, гравитация']},
+  {txt: 'art',    items: ['Рерих Горный пейзаж']},
+  {txt: 'travel', items: ['Nordic countries, Japan, Italy']},
+  {txt: 'code',   items: ['Пиксели С C++ Rust SDL Go Erl Lisp F# System F Formality']},
+];
+
+const main = () => {
+  const svg = document.getElementById('svg');
+  for (let i = 0; i < itemsTree.length; i++) {
+    svg.innerHTML += `<text x="0" y="${i * 5}">${itemsTree[i].items[0]}</text>`;
+  }
+};
 
 window.onload = () => { measure(); main(); }
 
