@@ -64,11 +64,11 @@ const itemsTree = [
 
 const drawNodeItem = (svg, x, y, txt) => svg.innerHTML += `<text x="${x}" y="${y}">${txt}</text>`
 
-const drawNodeItems = (svg, calcX, calcY, txts) => txts.forEach((txt, i) => drawItem(svg, calcX(i), calcY(i), txt))
+const drawNodeItems = (svg, calcX, calcY, txts) => txts.forEach((txt, i) => drawNodeItem(svg, calcX(i), calcY(i), txt))
 
 const drawNode = (svg, txt, items, yNode) => {
   drawNodeItem(svg, 0, yNode, txt)
-  drawItems(svg, _ => 20, yItem => yNode + yItem, items)
+  drawNodeItems(svg, _ => 20, yItem => yNode + yItem, items)
 }
       
 const drawTree = (svg, nodes) => nodes.forEach((node, offset) => drawNode(svg, node.txt, node.items, 15 + offset * 5))
