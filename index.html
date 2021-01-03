@@ -55,11 +55,11 @@ const measure = () => {
 
 const itemsTree = [
   {txt: 'books',  items: ['Гоголь Дуглас Адамс Толкиен Пелевин', 'Ален Бомбар']},
-  {txt: 'music',  items: ['ОксиМирон Монеточка Канцлер Ги Радик Тюлюш Высоцкий']},
-  {txt: 'физика', items: ['фотон/волна, квантовая теория, постоянная Планка, эффект замедления времени, гравитация']},
+  {txt: 'music',  items: ['ОксиМирон Монеточка Канцлер Ги', 'Радик Тюлюш Высоцкий']},
+  {txt: 'физика', items: ['фотон/волна, квантовая теория', 'постоянная Планка, эффект замедления времени', 'гравитация']},
   {txt: 'art',    items: ['Рерих Горный пейзаж']},
   {txt: 'travel', items: ['Nordic countries, Japan, Italy']},
-  {txt: 'code',   items: ['Пиксели С C++ Rust SDL Go Erl Lisp F# System F Formality']},
+  {txt: 'code',   items: ['Пиксели С C++ Rust SDL Go Erl Lisp', 'F# System F Formality']},
 ]
 
 const drawNodeItem = (svg, x, y, txt) => svg.innerHTML += `<text x="${x}" y="${y}">${txt}</text>`
@@ -71,7 +71,13 @@ const drawNode = (svg, txt, items, yNode) => {
   drawNodeItems(svg, _ => 20, yItem => yNode + yItem, items)
 }
       
-const drawTree = (svg, nodes) => nodes.forEach((node, offset) => drawNode(svg, node.txt, node.items, 15 + offset * 5))
+const drawTree = (svg, nodes) => nodes.reduce((acc, val, i) => {
+  const yOffsetInitial = 15
+  drawNode(svg, node.txt, node.items, yOffsetInitial + acc)
+  const nodeHeight = 15
+  const yOffsetNode = acc + node.items.length * nodeHeight
+  return yOffsetNode
+}, 0)
 
 window.onload = () => { measure(); drawTree(document.getElementById('svg'), itemsTree) }
 
