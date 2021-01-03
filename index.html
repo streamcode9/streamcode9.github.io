@@ -38,15 +38,15 @@ svg > text { font-size: 0.25rem; fill: white; }
 </svg>
 <div id="fps"></div>
 <script>
-const drawFPS = x => { document.querySelector("#fps").innerHTML = x; }
+const drawFPS = x => { document.querySelector("#fps").innerHTML = x }
 
 const measure = () => {
-  let then = performance.now();
+  let then = performance.now()
 
   const loop = () => {
-    const now = performance.now();
-    const elapsed = now - then;
-    then = now;	
+    const now = performance.now()
+    const elapsed = now - then
+    then = now;
     if (now % 9 === 0) drawFPS((1000 / elapsed).toPrecision(3));
     requestAnimationFrame(loop);
   };
@@ -54,23 +54,29 @@ const measure = () => {
 }
 
 const itemsTree = [
-  {txt: 'books',  items: ['Гоголь Дуглас Адамс Толкиен Пелевин']},
+  {txt: 'books',  items: ['Гоголь Дуглас Адамс Толкиен Пелевин', 'Ален Бомбар']},
   {txt: 'music',  items: ['ОксиМирон Монеточка Канцлер Ги Радик Тюлюш Высоцкий']},
   {txt: 'физика', items: ['фотон/волна, квантовая теория, постоянная Планка, эффект замедления времени, гравитация']},
   {txt: 'art',    items: ['Рерих Горный пейзаж']},
   {txt: 'travel', items: ['Nordic countries, Japan, Italy']},
   {txt: 'code',   items: ['Пиксели С C++ Rust SDL Go Erl Lisp F# System F Formality']},
-];
+]
+
+const drawItem = (el, x, y, txt) => el.innerHTML += `<text x="${x}" y="${y}">${txt}</text>`
+
+const drawItems = (el, calcX, calcY, txts) => txts.forEach((txt, i) => drawItem(el, calcX(i), calcY(i), txt))
+
+const id = x => x
 
 const main = () => {
-  const offsetY = 15;
-  const svg = document.getElementById('svg');
+  const offsetY = 15
+  const svg = document.getElementById('svg')
   for (let i = 0; i < itemsTree.length; i++) {
-    let y = offsetY + i * 5;
-    svg.innerHTML += `<text x="0" y="${y}">${itemsTree[i].txt}</text>`;
-    svg.innerHTML += `<text x="20" y="${y}">${itemsTree[i].items[0]}</text>`;
+    let y = offsetY + i * 5
+    drawItem(svg, 0, y, itemsTree[i].txt)
+    drawItems(svg, id, _ => y, itemsTree[i].items)
   }
-};
+}
 
 window.onload = () => { measure(); main(); }
 
