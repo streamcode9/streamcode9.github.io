@@ -66,9 +66,9 @@ const drawItem = (svg, x, y, txt) => svg.innerHTML += `<text x="${x}" y="${y}">$
 
 const drawItems = (svg, calcX, calcY, txts) => txts.forEach((txt, i) => drawItem(svg, calcX(i), calcY(i), txt))
 
-const drawNode = (svg, txt, items, yNode, itemHeight) => {
-  drawItem(svg, 0, yNode, txt)
-  drawItem(svg, _ => 20, yItem => yNode + yItem * itemHeight, items)
+const drawNode = (svg, txt, items, xText, xItems, yNode, itemHeight) => {
+  drawItem(svg, xText, yNode, txt)
+  drawItem(svg, _ => xItems, yItem => yNode + yItem * itemHeight, items)
 }
       
 const drawTree = (svg, nodes) => nodes.reduce((acc, val, i) => {
@@ -76,7 +76,9 @@ const drawTree = (svg, nodes) => nodes.reduce((acc, val, i) => {
   const yOffset = 15
   const itemHeight = 5
   const yNode = acc
-  drawNode(svg, node.txt, node.items, yOffset + yNode, itemHeight)
+  const xText = 0
+  const xItems = 20
+  drawNode(svg, node.txt, node.items, xText, xItems, yOffset + yNode, itemHeight)
   return acc + node.items.length * itemHeight
 }, 0)
 
