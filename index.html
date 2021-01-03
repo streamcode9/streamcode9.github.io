@@ -62,22 +62,22 @@ const itemsTree = [
   {txt: 'code',   items: ['Пиксели С C++ Rust SDL Go Erl Lisp', 'F# System F Formality']},
 ]
 
-const drawNodeItem = (svg, x, y, txt) => svg.innerHTML += `<text x="${x}" y="${y}">${txt}</text>`
+const drawItem = (svg, x, y, txt) => svg.innerHTML += `<text x="${x}" y="${y}">${txt}</text>`
 
-const drawNodeItems = (svg, calcX, calcY, txts) => txts.forEach((txt, i) => drawNodeItem(svg, calcX(i), calcY(i), txt))
+const drawItems = (svg, calcX, calcY, txts) => txts.forEach((txt, i) => drawItem(svg, calcX(i), calcY(i), txt))
 
-const drawNode = (svg, txt, items, yNode) => {
-  drawNodeItem(svg, 0, yNode, txt)
-  drawNodeItems(svg, _ => 20, yItem => yNode + yItem, items)
+const drawNode = (svg, txt, items, yNode, itemHeight) => {
+  drawItem(svg, 0, yNode, txt)
+  drawItem(svg, _ => 20, yItem => yNode + yItem * itemHeight, items)
 }
       
 const drawTree = (svg, nodes) => nodes.reduce((acc, val, i) => {
   const node = nodes[i]
-  const yOffsetInitial = 15
-  drawNode(svg, node.txt, node.items, yOffsetInitial + acc)
-  const nodeHeight = 15
-  const yOffsetNode = acc + node.items.length * nodeHeight
-  return yOffsetNode
+  const yOffset = 15
+  const itemHeight = 5
+  const yNode = acc
+  drawNode(svg, node.txt, node.items, yOffset + yNode, itemHeight)
+  return acc + node.items.length * itemHeight
 }, 0)
 
 window.onload = () => { measure(); drawTree(document.getElementById('svg'), itemsTree) }
