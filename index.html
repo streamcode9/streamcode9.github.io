@@ -62,23 +62,18 @@ const itemsTree = [
   {txt: 'code',   items: ['Пиксели С C++ Rust SDL Go Erl Lisp F# System F Formality']},
 ]
 
-const drawItem = (el, x, y, txt) => el.innerHTML += `<text x="${x}" y="${y}">${txt}</text>`
+const drawNodeItem = (svg, x, y, txt) => svg.innerHTML += `<text x="${x}" y="${y}">${txt}</text>`
 
-const drawItems = (el, calcX, calcY, txts) => txts.forEach((txt, i) => drawItem(el, calcX(i), calcY(i), txt))
+const drawNodeItems = (svg, calcX, calcY, txts) => txts.forEach((txt, i) => drawItem(svg, calcX(i), calcY(i), txt))
 
-const id = x => x
-
-const main = () => {
-  const offsetY = 15
-  const svg = document.getElementById('svg')
-  for (let i = 0; i < itemsTree.length; i++) {
-    let y = offsetY + i * 5
-    drawItem(svg, 0, y, itemsTree[i].txt)
-    drawItems(svg, id, _ => y, itemsTree[i].items)
-  }
+const drawNode = (svg, txt, items, yNode) => {
+  drawNodeItem(svg, 0, yNode, txt)
+  drawItems(svg, _ => 20, yItem => yNode + yItem, items)
 }
+      
+const drawTree = (svg, nodes) => nodes.forEach((node, offset) => drawNode(svg, node.txt, node.items, 15 + offset * 5))
 
-window.onload = () => { measure(); main(); }
+window.onload = () => { measure(); drawTree(document.getElementById('svg'), itemsTree) }
 
 </script>
 </body>
