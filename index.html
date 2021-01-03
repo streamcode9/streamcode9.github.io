@@ -72,6 +72,7 @@ const drawNode = (svg, txt, items, yNode) => {
 }
       
 const drawTree = (svg, nodes) => nodes.reduce((acc, val, i) => {
+  const node = nodes[i]
   const yOffsetInitial = 15
   drawNode(svg, node.txt, node.items, yOffsetInitial + acc)
   const nodeHeight = 15
