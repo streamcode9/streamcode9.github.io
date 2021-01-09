@@ -61,7 +61,14 @@ const itemsTree = [
   {txt: 'физика', items: ['фотон/волна, квантовая теория', 'постоянная Планка', 'эффект замедления времени', 'гравитация']},
   {txt: 'art',    items: ['Рерих Горный пейзаж дуб']},
   {txt: 'travel', items: ['Nordic countries Japaт Italy']},
-  {txt: 'code',   items: ['Пиксели С C++ Rust SDL Go Erl Lisp', 'F# System F Formality']},
+  {txt: 'code',   items: [
+                          'game: пиксели С C++ Rust SDL',
+                          'software-design + examples',
+                          'low level js/c#',
+                          'SmallTalk Erl Lisp Forth',
+                          'n2o: c#',
+                          'BPE: F# System-F Formality '
+                         ]},
 ]
 
 const drawItem = (svg, x, y, txt) => svg.innerHTML += `<text x="${x}" y="${y}">${txt}</text>`
