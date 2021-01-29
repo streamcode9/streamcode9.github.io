@@ -67,10 +67,15 @@ const itemsTree = [
 const drawLink = (svg, x, y, txt, link) => {
   // svg.parentNode.replaceChild(svg.cloneNode(false), svg)
   const handler = () => {
-    svgElem.innertHTML = ''
+    svg.innertHTML = ''
     drawTree(svgElem, link)
   }
-  svg.innerHTML += `<text onclick="() => handler()" x="${x}" y="${y}">${txt}</text>`
+  const textNode = document.createElement('text')
+  textNode.addEventListener('click', () => handler())
+  textNode.setAttribute('x', x)
+  textNode.setAttribute('y', x)
+  textNode.textContent = txt
+  svg.appendChild(textNode)
 }
 
 const drawItem = (svg, x, y, txt) => svg.innerHTML += `<text x="${x}" y="${y}">${txt}</text>`
