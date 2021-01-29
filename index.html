@@ -46,21 +46,44 @@ const measure = () => {
   requestAnimationFrame(loop);
 }
 
+const svgElem = document.getElementById('svg')
+
+const item = (txt, items, link) => ({txt, items, link})
+
+const itemsTreePhysics = [
+  item('XXXX', 'Кеплер'),
+]
+
 const itemsTree = [
   {txt: 'health',   items: ['сустав жим прогиб грасана собака шавасана']},
   {txt: 'books',    items: ['Гоголь Адамс Роулинг Толкиен', 'Бомбар Попов Амосов Гельфанд', 'Франкл Альтшуллер']},
   {txt: 'music',    items: ['5`NIZZA Канцлер Ги Земфира Цой Shortparis', 'Монеточка ОксиМирон Рихтер Курензис', 'Сурганова Радик Тюлюш Высоцкий', 'Моргенштерн Ноганно']},
   {txt: 'persons',  items: ['Франко Стус', 'Мандельштам', 'Юзефович Долин Полозкова']},
   {txt: 'projects', items: ['Voice', 'Сохрани мою речь навсегда']},
+  {txt: '',         items: ['---']},
+  {txt: 'Физика',   items: ['-= Физика =-'], link: itemsTreePhysics }
 ]
+
+const drawLink = (svg, x, y, txt, link) => {
+  // svg.parentNode.replaceChild(svg.cloneNode(false), svg)
+  const handler = () => {
+    svgElem.innertHTML = ''
+    drawTree(svgElem, link)
+  }
+  svg.innerHTML += `<text onclick="() => handler()" x="${x}" y="${y}">${txt}</text>`
+}
 
 const drawItem = (svg, x, y, txt) => svg.innerHTML += `<text x="${x}" y="${y}">${txt}</text>`
 
 const drawItems = (svg, calcX, calcY, txts) => txts.forEach((txt, i) => drawItem(svg, calcX(i), calcY(i), txt))
 
-const drawNode = (svg, txt, items, xText, xItems, yNode, itemHeight) => {
-  drawItem(svg, xText, yNode, txt)
-  drawItems(svg, _ => xItems, yItem => yNode + yItem * itemHeight, items)
+const drawNode = (svg, xText, xItems, yNode, itemHeight, {txt, items, link}) => {
+  if (link) {
+    drawLink(svg, xText, yNode, txt, onclick)
+  } else {
+    drawItem(svg, xText, yNode, txt)
+    drawItems(svg, _ => xItems, yItem => yNode + yItem * itemHeight, items)
+  }
 }
       
 const drawTree = (svg, nodes) => nodes.reduce((acc, val, i) => {
@@ -70,11 +93,11 @@ const drawTree = (svg, nodes) => nodes.reduce((acc, val, i) => {
   const y = acc
   const xText = 0
   const xItems = 20
-  drawNode(svg, node.txt, node.items, xText, xItems, yOffset + y, itemHeight)
+  drawNode(svg, xText, xItems, yOffset + y, itemHeight, node)
   return acc + node.items.length * itemHeight
 }, 0)
 
-window.onload = () => { measure(); drawTree(document.getElementById('svg'), itemsTree) }
+window.onload = () => { measure(); drawTree(svgElem, itemsTree) }
 
 </script>
 </body>
