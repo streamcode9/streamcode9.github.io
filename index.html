@@ -73,7 +73,7 @@ const drawLink = (svg, x, y, txt, link) => {
   const textNode = document.createElement('text')
   textNode.addEventListener('click', () => handler())
   textNode.setAttribute('x', x)
-  textNode.setAttribute('y', x)
+  textNode.setAttribute('y', y)
   textNode.textContent = txt
   svg.appendChild(textNode)
 }
