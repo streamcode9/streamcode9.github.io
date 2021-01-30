@@ -51,7 +51,7 @@ const svgElem = document.getElementById('svg')
 const item = (txt, items, link) => ({txt, items, link})
 
 const itemsTreePhysics = [
-  item('XXXX', 'Кеплер'),
+  item('----', ['Кеплер']),
 ]
 
 const itemsTree = [
@@ -66,13 +66,12 @@ const itemsTree = [
 
 const drawLink = (svg, x, y, txt, link) => {
   const handler = () => {
-    // svg.parentNode.replaceChild(svg.cloneNode(false), svg)
     svg.innerHTML = ''
     drawTree(svg, link)
   }
-  const textNode = document.createElement('text')
+  const textNode = document.createElementNS("http://www.w3.org/2000/svg", 'text')
   textNode.addEventListener('click', () => handler())
-  textNode.setAttribute('x', x)
+  textNode.setAttribute('x', x+20)
   textNode.setAttribute('y', y)
   textNode.textContent = txt
   svg.appendChild(textNode)
@@ -84,7 +83,7 @@ const drawItems = (svg, calcX, calcY, txts) => txts.forEach((txt, i) => drawItem
 
 const drawNode = (svg, xText, xItems, yNode, itemHeight, {txt, items, link}) => {
   if (link) {
-    drawLink(svg, xText, yNode, txt, onclick)
+    drawLink(svg, xText, yNode, txt, link)
   } else {
     drawItem(svg, xText, yNode, txt)
     drawItems(svg, _ => xItems, yItem => yNode + yItem * itemHeight, items)
