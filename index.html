@@ -62,7 +62,7 @@ const itemsTree = [
   {txt: '🔭',       link: itemsTreeScience },
 ]
 
-const drawLink = (app, x, y, txt, link) => {
+const drawLink = (app, txt, link) => {
   const handler = () => {
     app.innerHTML = ''
     drawTree(app, link)
