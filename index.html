@@ -13,11 +13,10 @@ body {
   margin: 0; width: 100vw; height: 100vh;
   font-family: 'PT+Sans', sans-serif;
 }
-.images { display: flex; overflow: hidden; }
-.images > img { height: 115px; }
 #app {
+  display: grid; grid-template-columns: 1fr 1fr;
   border: 1px dashed red;
-  height: calc(100vh - 115px - 4px); width: calc(100vw - 4px);
+  height: 100%; width: 100%;
 }
 #fps { position: fixed; bottom: 0; right: 0; color: white; }
 </style>
