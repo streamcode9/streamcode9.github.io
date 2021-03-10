@@ -91,7 +91,7 @@ const drawNode = (app, {txt, items, link}) => {
   if (link) {
     drawLink(app, txt, link)
   } else {
-    app.appendChild(div(span(txt)))
+    app.appendChild(div([span(txt)]))
     app.appendChild(div(drawItems(items)))
   }
 }
