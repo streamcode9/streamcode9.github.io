@@ -16,21 +16,19 @@ body {
 }
 .images { display: flex; overflow: hidden; }
 .images > img { height: 115px; }
-svg {
+#app {
   border: 1px dashed red;
   height: calc(100vh - 115px - 4px);
   width: calc(100vw - 4px);
 }
-svg > text { font-size: 0.25rem; fill: white; }
 #fps { position: fixed; bottom: 0; right: 0; color: white; }
 </style>
 </head>
 <body>
-<svg id="svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-<rect width="100" height="100" fill="transparent" stroke="blue" />
-<text x="0" y="5">🤯 ➫ 🤬 ➫ 😭 ➫ 🤒 ➫ ☠️</text>
-<text x="0" y="10">🏋️‍ ➫ 🤡 ➫ ☯️</text>
-</svg>
+<div id="app">
+<div>🤯 ➫ 🤬 ➫ 😭 ➫ 🤒 ➫ ☠️</div>
+<div>🏋️‍ ➫ 🤡 ➫ ☯️</div>
+</div>
 <div id="fps"></div>
 <script>
 const drawFPS = x => { document.querySelector("#fps").innerHTML = x }
@@ -48,7 +46,7 @@ const measure = () => {
   requestAnimationFrame(loop);
 }
 
-const svgElem = document.getElementById('svg')
+const appElem = document.getElementById('app')
 
 const item = (txt, items, link) => ({txt, items, link})
 
@@ -64,44 +62,42 @@ const itemsTree = [
   {txt: '🔭',       link: itemsTreeScience },
 ]
 
-const drawLink = (svg, x, y, txt, link) => {
+const drawLink = (app, x, y, txt, link) => {
   const handler = () => {
-    svg.innerHTML = ''
-    drawTree(svg, link)
+    app.innerHTML = ''
+    drawTree(app, link)
   }
-  const textNode = document.createElementNS("http://www.w3.org/2000/svg", 'text')
-  textNode.addEventListener('click', () => handler())
-  textNode.setAttribute('x', x+20)
-  textNode.setAttribute('y', y)
-  textNode.textContent = txt
-  svg.appendChild(textNode)
+  const btn = document.createElement('button')
+  btn.addEventListener('click', () => handler())
+  btn.textContent = txt
+  app.appendChild(btn)
 }
 
-const drawItem = (svg, x, y, txt) => svg.innerHTML += `<text x="${x}" y="${y}">${txt}</text>`
+const drawItem = (app, x, y, txt) => app.innerHTML += `<span>${txt}</span>`
 
-const drawItems = (svg, calcX, calcY, txts) => txts.forEach((txt, i) => drawItem(svg, calcX(i), calcY(i), txt))
+const drawItems = (app, calcX, calcY, txts) => txts.forEach((txt, i) => drawItem(app, calcX(i), calcY(i), txt))
 
-const drawNode = (svg, xText, xItems, yNode, itemHeight, {txt, items, link}) => {
+const drawNode = (app, xText, xItems, yNode, itemHeight, {txt, items, link}) => {
   if (link) {
-    drawLink(svg, xText, yNode, txt, link)
+    drawLink(app, xText, yNode, txt, link)
   } else {
-    drawItem(svg, xText, yNode, txt)
-    drawItems(svg, _ => xItems, yItem => yNode + yItem * itemHeight, items)
+    drawItem(app, xText, yNode, txt)
+    drawItems(app, _ => xItems, yItem => yNode + yItem * itemHeight, items)
   }
 }
       
-const drawTree = (svg, nodes) => nodes.reduce((acc, val, i) => {
+const drawTree = (app, nodes) => nodes.reduce((acc, val, i) => {
   const node = nodes[i]
   const yOffset = 15
   const itemHeight = 5
   const y = acc
   const xText = 0
   const xItems = 20
-  drawNode(svg, xText, xItems, yOffset + y, itemHeight, node)
+  drawNode(app, xText, xItems, yOffset + y, itemHeight, node)
   return acc + node.items.length * itemHeight
 }, 0)
 
-window.onload = () => { measure(); drawTree(svgElem, itemsTree) }
+window.onload = () => { measure(); drawTree(appElem, itemsTree) }
 
 </script>
 </body>
