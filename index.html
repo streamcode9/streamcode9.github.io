@@ -73,29 +73,30 @@ const drawLink = (app, x, y, txt, link) => {
   app.appendChild(btn)
 }
 
-const drawItem = (app, x, y, txt) => app.innerHTML += `<span>${txt}</span>`
+const span = txt => {
+  const s = document.createElement('span')
+  s.textContent = txt
+  return s
+}
 
-const drawItems = (app, calcX, calcY, txts) => txts.forEach((txt, i) => drawItem(app, calcX(i), calcY(i), txt))
+const div = items => {
+  const d = document.createElement('div')
+  items.forEach(item => d.appendChild(item))
+  return d
+}
 
-const drawNode = (app, xText, xItems, yNode, itemHeight, {txt, items, link}) => {
+const drawItems = txts => txts.forEach(txt => span(txt))
+
+const drawNode = (app, {txt, items, link}) => {
   if (link) {
-    drawLink(app, xText, yNode, txt, link)
+    drawLink(app, txt, link)
   } else {
-    drawItem(app, xText, yNode, txt)
-    drawItems(app, _ => xItems, yItem => yNode + yItem * itemHeight, items)
+    app.appendChild(div(span(txt)))
+    app.appendChild(div(drawItems(items)))
   }
 }
       
-const drawTree = (app, nodes) => nodes.reduce((acc, val, i) => {
-  const node = nodes[i]
-  const yOffset = 15
-  const itemHeight = 5
-  const y = acc
-  const xText = 0
-  const xItems = 20
-  drawNode(app, xText, xItems, yOffset + y, itemHeight, node)
-  return acc + node.items.length * itemHeight
-}, 0)
+const drawTree = (app, nodes) => nodes.forEach(val => drawNode(app, nodes[i]))
 
 window.onload = () => { measure(); drawTree(appElem, itemsTree) }
 
