@@ -85,7 +85,7 @@ const div = items => {
   return d
 }
 
-const drawItems = txts => txts.forEach(txt => span(txt))
+const drawItems = txts => txts.map(txt => span(txt))
 
 const drawNode = (app, {txt, items, link}) => {
   if (link) {
