@@ -96,7 +96,7 @@ const drawNode = (app, {txt, items, link}) => {
   }
 }
       
-const drawTree = (app, nodes) => nodes.forEach(n => drawNode(app, n[i]))
+const drawTree = (app, nodes) => nodes.forEach(n => drawNode(app, n))
 
 window.onload = () => { measure(); drawTree(appElem, itemsTree) }
 
