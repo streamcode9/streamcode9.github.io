@@ -98,6 +98,7 @@ const drawItems = txts => txts.map(txt => span(txt))
 const drawNode = (app, {txt, items, link}) => {
   if (link) {
     drawLink(app, txt, link)
+    app.appendChild(div([span('---')]))
   } else {
     app.appendChild(div([span(txt)]))
     app.appendChild(div(drawItems(items)))
