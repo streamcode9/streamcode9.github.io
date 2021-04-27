@@ -6,26 +6,66 @@
 <meta name="description" content="Life. Universe. Everything." />
 <meta name="author" content="streamcode9" />
 <title>Life. Universe. Everything.</title>
+<link rel="stylesheet" href="https://unpkg.com/chota@latest">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-body {
-  background-color: black; color: white;
-  margin: 0; width: 100vw; height: 100vh;
-  font-family: 'PT+Sans', sans-serif;
-}
-#app {
-  display: grid; grid-template-columns: 1fr 1fr;
-  border: 1px dashed red;
-  height: 100%; width: 100%;
-}
 #fps { position: fixed; bottom: 0; right: 0; color: white; }
 </style>
 </head>
 <body>
+
 <div id="app">
+
 <div>🤯 ➫ 🤬 ➫ 😭 ➫ 🤒 ➫ ☠️</div>
-<div>🏋️‍ ➫ 🤡 ➫ ☯️</div>
+<div>🏋️ ➫ 🤡 ➫ ☯️</div>
+
+<div>
+  <span>health</span>
 </div>
+<div>
+  <span>сустав жим прогиб грасана собака шавасана</span>
+</div>
+
+<div><span>books</span></div>
+<div><span>Гоголь Булгаков Адамс Роулинг Толкиен</span></div>
+
+<div><span>music</span></div>
+<div><span></span></div>
+
+<div><span>----</span></div>
+<div><span>Кирилл Рихтер Erik Satie Пярт Гласс Decacorde</span></div>
+
+<div><span>----</span></div>
+<div><span>5`NIZZA</span></div>
+
+<div><span>----</span></div>
+<div><span>Радик Тюлюш</span></div>
+
+<div><span>----</span></div>
+<div><span>Высоцкий</span></div>
+
+<div><span>----</span></div>
+<div><span>Канцлер Ги Земфира Цой</span></div>
+
+<div><span>----</span></div>
+<div><span>Shortparis Billie Eilish</span></div>
+
+<div><span>science</span></div>
+<div><span></span></div>
+
+<div><span>----</span></div>
+<div><span>Кеплер Коперник</span></div>
+
+<div><span>----</span></div>
+<div><span>Бомбар Попов Семихатов Амосов Альтшуллер</span></div>
+
+<div><span>movies</span></div>
+<div><span>shinobi жмурки true detective tarantino fight club</span></div>
+
+<div><span>code</span></div>
+<div><span>https://github.com/streamcode9/software-design</span></div>
+
+</div>
+  
 <div id="fps"></div>
 <script>
 const drawFPS = x => { document.querySelector("#fps").innerHTML = x }
@@ -43,65 +83,7 @@ const measure = () => {
   requestAnimationFrame(loop);
 }
 
-const appElem = document.getElementById('app')
-
-const item = (txt, items, link) => ({txt, items, link})
-
-const itemsTree = [
-  {txt: 'health',   items: ['сустав жим прогиб грасана собака шавасана']},
-  {txt: 'books',    items: ['Гоголь Булгаков Адамс Роулинг Толкиен']},
-  {txt: 'music',    items: [''] },
-  item('----', ['Кирилл Рихтер Erik Satie Пярт Гласс Decacorde']),
-  item('----', ['5`NIZZA']),
-  item('----', ['Радик Тюлюш']),
-  item('----', ['Высоцкий']),
-  item('----', ['Канцлер Ги Земфира Цой']),
-  item('----', ['Shortparis Billie Eilish']),
-  {txt: 'science',    items: [''] },
-  item('----', ['Кеплер Коперник']),
-  item('----', ['Бомбар Попов Семихатов Амосов Альтшуллер']),
-  {txt: 'movies',   items: ['shinobi жмурки true detective tarantino fight club']},
-  {txt: 'code',     items: ['https://github.com/streamcode9/software-design']},
-]
-
-const drawLink = (app, txt, link) => {
-  const handler = () => {
-    app.innerHTML = ''
-    drawTree(app, link)
-  }
-  const btn = document.createElement('button')
-  btn.addEventListener('click', () => handler())
-  btn.textContent = txt
-  app.appendChild(btn)
-}
-
-const span = txt => {
-  const s = document.createElement('span')
-  s.textContent = txt
-  return s
-}
-
-const div = items => {
-  const d = document.createElement('div')
-  items.forEach(item => d.appendChild(item))
-  return d
-}
-
-const drawItems = txts => txts.map(txt => span(txt))
-
-const drawNode = (app, {txt, items, link}) => {
-  if (link) {
-    drawLink(app, txt, link)
-    app.appendChild(div([span('---')]))
-  } else {
-    app.appendChild(div([span(txt)]))
-    app.appendChild(div(drawItems(items)))
-  }
-}
-      
-const drawTree = (app, nodes) => nodes.forEach(n => drawNode(app, n))
-
-window.onload = () => { measure(); drawTree(appElem, itemsTree) }
+window.onload = () => { measure() }
 
 </script>
 </body>
