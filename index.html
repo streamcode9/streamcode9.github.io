@@ -47,27 +47,21 @@ const appElem = document.getElementById('app')
 
 const item = (txt, items, link) => ({txt, items, link})
 
-const itemsTreeScience = [
-  item('----', ['Кеплер Коперник']),
-  item('----', ['Бомбар Попов Семихатов Саватеев Амосов Альтшуллер']),
-]
-
-const itemsTreeMusic = [
+const itemsTree = [
+  {txt: 'health',   items: ['сустав жим прогиб грасана собака шавасана']},
+  {txt: 'books',    items: ['Гоголь Булгаков Адамс Роулинг Толкиен']},
+  {txt: 'music',    items: [''] },
   item('----', ['Кирилл Рихтер Erik Satie Пярт Гласс Decacorde']),
   item('----', ['5`NIZZA']),
   item('----', ['Радик Тюлюш']),
   item('----', ['Высоцкий']),
   item('----', ['Канцлер Ги Земфира Цой']),
   item('----', ['Shortparis Billie Eilish']),
-]
-
-const itemsTree = [
-  {txt: 'health',   items: ['сустав жим прогиб грасана собака шавасана']},
-  {txt: 'books',    items: ['Гоголь Булгаков Адамс Роулинг Толкиен']},
-  {txt: 'music',    link: itemsTreeMusic },
+  {txt: 'science',    items: [''] },
+  item('----', ['Кеплер Коперник']),
+  item('----', ['Бомбар Попов Семихатов Амосов Альтшуллер']),
   {txt: 'movies',   items: ['shinobi жмурки true detective tarantino fight club']},
   {txt: 'code',     items: ['https://github.com/streamcode9/software-design']},
-  {txt: '🔭',       link: itemsTreeScience },
 ]
 
 const drawLink = (app, txt, link) => {
