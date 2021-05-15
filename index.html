@@ -83,7 +83,7 @@ const measure = () => {
     const now = performance.now()
     const elapsed = now - then
     then = now
-    if (now % 9 === 0) drawFPS((1000 / elapsed).toPrecision(3))
+    if (Math.floor(now) % 9 === 0) drawFPS((1000 / elapsed).toPrecision(3))
     requestAnimationFrame(loop)
   }
 
