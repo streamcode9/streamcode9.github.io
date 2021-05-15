@@ -38,13 +38,13 @@
 <div>сустав жим прогиб грасана собака шавасана</div>
 
 <div>books</div>
-<div>Гоголь Булгаков Адамс Роулинг Толкиен Сунь Цзы Макиавелли</div>
+<div>Гоголь Булгаков Адамс Роулинг Толкиен Сунь Цзы Макиавелли Cumberbatch Stephen Fry</div>
 
 <div>music</div>
 <div></div>
 
-<div><span>----</span></div>
-<div><span>Кирилл Рихтер Erik Satie Пярт Гласс Decacorde</span></div>
+<div></div>
+<div>Кирилл Рихтер Erik Satie Пярт Гласс Decacorde</div>
 
 <div></div>
 <div>5`NIZZA</div>
@@ -68,7 +68,7 @@
 <div>Бомбар Попов Семихатов Амосов Альтшуллер</div>
 
 <div>code</div>
-<div><span>https://github.com/streamcode9/software-design</span></div>
+<div>software-design</div>
 
 </div>
   
@@ -81,6 +81,7 @@ const measure = () => {
 
   const loop = () => {
     const now = performance.now()
+    console.log(now)
     const elapsed = now - then
     then = now;
     if (now % 9 === 0) drawFPS((1000 / elapsed).toPrecision(3));
