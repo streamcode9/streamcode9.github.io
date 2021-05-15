@@ -74,20 +74,20 @@
   
 <div id="fps"></div>
 <script>
-const drawFPS = x => { document.querySelector("#fps").innerHTML = x }
+const drawFPS = x => { console.log(x); document.querySelector('#fps').innerHTML = x }
 
 const measure = () => {
   let then = performance.now()
 
   const loop = () => {
     const now = performance.now()
-    console.log(now)
     const elapsed = now - then
-    then = now;
-    if (now % 9 === 0) drawFPS((1000 / elapsed).toPrecision(3));
-    requestAnimationFrame(loop);
-  };
-  requestAnimationFrame(loop);
+    then = now
+    if (now % 9 === 0) drawFPS((1000 / elapsed).toPrecision(3))
+    requestAnimationFrame(loop)
+  }
+
+  requestAnimationFrame(loop)
 }
 
 window.onload = () => { measure() }
