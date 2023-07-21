@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: home
 title: Home
 ---
 # {{ "streamcode9" | upcase }}
