@@ -14,4 +14,5 @@ Marine insurance
 
 ## {{ "fields of interest" | upcase }}
 
-## {{ "repos" | upcase }}
+* azure dotnet windows visualstudio
+* aws typescript chatgpt
