@@ -10,6 +10,8 @@ Software developer
 
 ## {{ "domain" | upcase }}
 
+Marine insurance
+
 ## {{ "fields of interest" | upcase }}
 
 ## {{ "repos" | upcase }}
