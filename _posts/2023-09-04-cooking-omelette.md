@@ -12,3 +12,4 @@ Tips:
 * start rolling the eggs
   before they are
   completely thickened
+* sunflower & butter oils
