@@ -2,5 +2,7 @@
   link: /
 - name: Ukulele
   link: /pages/ukulele.html
+- name: Projects
+  link: /pages/projects.html
 - name: Blog
   link: /pages/blog.html
