@@ -2,6 +2,4 @@
 layout: default
 title: Home
 ---
-# {{ "-_-" | upcase }}
-
-## {{ "*<:->>>" | upcase }}
+# {{ "Welcome to knowledge base" | upcase }}
