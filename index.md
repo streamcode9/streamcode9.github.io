@@ -1,5 +1,4 @@
 ---
-layout: default
-title: Home
+title: home
 ---
 # {{ "Share knowledge and experience" | upcase }}

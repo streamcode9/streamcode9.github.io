@@ -1,6 +1,5 @@
 ---
-layout: default
-title: Blog
+title: blog
 ---
 <h1>Latest Posts</h1>
 
