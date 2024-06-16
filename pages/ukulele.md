@@ -3,7 +3,6 @@ title: ukulele
 ---
 
 {{ page.title }}
-{{ "Hello ukulele!" }}
 
 Hora soprano ukulele. https://hora-factory.com
 
