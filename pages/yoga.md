@@ -1,7 +1,7 @@
 ---
-title: yoga
+title: Yoga
 ---
 
-{{ page.title }}
+# {{ page.title }}
 
 https://en.wikipedia.org/wiki/Tirumalai_Krishnamacharya
