@@ -1,8 +1,8 @@
 ---
-title: ukulele
+title: Ukulele
 ---
 
-{{ page.title }}
+# {{ page.title }}
 
 Hora soprano ukulele. https://hora-factory.com
 
