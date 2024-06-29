@@ -1,4 +1,5 @@
 * Escapism
+* Deliberate practice
 * You don't stop learning
   because you grow old.
   You grow old
