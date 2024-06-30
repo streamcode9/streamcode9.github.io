@@ -8,4 +8,6 @@ title: home
 <a href="/pages/ukulele.html">Ukulele</a>
  | 
 <a href="/pages/yoga.html">Yoga</a>
+ | 
+ <a href="/pages/tech.html">Tech</a>
 
