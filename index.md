@@ -9,5 +9,5 @@ title: home
  | 
 <a href="/pages/yoga.html">Yoga</a>
  | 
- <a href="/pages/tech.html">Tech</a>
+<a href="/pages/tech.html">Tech</a>
 
