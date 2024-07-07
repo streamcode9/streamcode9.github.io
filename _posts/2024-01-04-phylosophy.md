@@ -4,8 +4,6 @@
   * Dedication - 40h per week trainings. Mental training - imagine all possible situations and your actions
   * Analyze past situations. Waht was done bad? What can be done better?
   * Analyze possible solutions -> make decision -> retro -> repeat => decision making experience
-* https://en.m.wikipedia.org/wiki/Scientific_method
-* Russel
 * You don't stop learning
   because you grow old.
   You grow old
