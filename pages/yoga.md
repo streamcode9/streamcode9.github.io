@@ -4,4 +4,7 @@ title: Yoga
 
 # {{ page.title }}
 
-https://en.wikipedia.org/wiki/Tirumalai_Krishnamacharya
+* joint gymnastics
+* run with tempo that is comfortable for talking
+* https://en.wikipedia.org/wiki/Tirumalai_Krishnamacharya
+
