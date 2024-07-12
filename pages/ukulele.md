@@ -5,6 +5,7 @@ title: Ukulele
 # {{ page.title }}
 
 Hora soprano.
+
 https://hora-factory.com
 Youtube tutorials.
 Basic chords.
@@ -14,16 +15,19 @@ Let it be song.
 ---
 
 Kala tenor.
+
 Songs. Fretboard excercises.
 
 ---
 
 Ortega concert.
+
 Ukulele marathon.
 
 ---
 
 Ohana soprano.
+
 Ukrainian songs course:
 * 1
   
