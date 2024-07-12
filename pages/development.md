@@ -1,2 +1,2 @@
-* communication skills
+* Communication skills
 * Blazor
