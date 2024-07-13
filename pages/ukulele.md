@@ -6,17 +6,18 @@ title: Ukulele
 
 Hora soprano.
 
-https://hora-factory.com
-Youtube tutorials.
-Basic chords.
-Struming patterns.
-Let it be song.
+* https://hora-factory.com
+* Youtube tutorials.
+* Basic chords.
+* Struming patterns.
+* Let it be song.
 
 ---
 
 Kala tenor.
 
-Songs. Fretboard excercises.
+* Songs.
+* Fretboard excercises.
 
 ---
 
