@@ -10,7 +10,7 @@ title: Ukulele
 * Youtube tutorials.
 * Basic chords.
 * Struming patterns.
-* Let it be song.
+* Let it be.
 
 ---
 
