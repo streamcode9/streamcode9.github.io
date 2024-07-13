@@ -14,20 +14,20 @@ Hora soprano.
 
 ---
 
-Kala tenor.
+2016 Kala tenor.
 
 * Songs.
 * Fretboard excercises.
 
 ---
 
-Ortega concert.
+2020 Ortega concert.
 
 Ukulele marathon.
 
 ---
 
-Ohana soprano.
+2024 Ohana soprano.
 
 Ukrainian songs course:
 * 1
