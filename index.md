@@ -9,6 +9,6 @@ title: home
  | 
 <a href="/2024/07/11/yoga.html">Yoga</a>
  | 
-<a href="/2024/07/14/research.html">Research</a>
+<a href="/2024/07/13/research.html">Research</a>
  | 
-<a href="/2024/07/13/development.html">Development</a>
+<a href="/2024/07/14/development.html">Development</a>
