@@ -1,4 +1,5 @@
 * Communication skills
 * Blazor
-* [Principles](https://github.com/streamcode9/software-design)
+* [Principles](https://github.com/streamcode9/software-design/blob/master/index.md)
 * [Production](https://github.com/streamcode9/software-design/blob/master/interview.md)
+* [Hardware](https://github.com/streamcode9/software-design/blob/master/laptop.md)
