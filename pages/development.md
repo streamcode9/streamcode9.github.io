@@ -1,3 +1,3 @@
 * Communication skills
 * Blazor
-* [https://github.com/streamcode9/software-design]
+* (Principles)[https://github.com/streamcode9/software-design]
