@@ -1,7 +1,7 @@
 ---
 title: home
 ---
-# {{ "Learn share repeat" }}
+# {{ "Learn sleep repeat" }}
 
 <a href="/pages/blog.html">Blog</a>
  | 
