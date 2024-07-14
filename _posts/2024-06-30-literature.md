@@ -9,3 +9,7 @@
 * Balsak
 * Morua
 * Prosper Merime
+* Duglas Adams
+* Isak Asimov
+* Joahn Rowling
+* Tolkien
