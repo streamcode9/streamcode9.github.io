@@ -8,6 +8,7 @@
 * German Gesse
 * Balsak
 * Morua
+* Somerset Moem
 * Prosper Merime
 * Duglas Adams
 * Isak Asimov
