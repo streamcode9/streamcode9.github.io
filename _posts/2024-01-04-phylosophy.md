@@ -1,5 +1,6 @@
 * Escapism
 * Stoics
+* Ludwig Wittgenstein
 * Deliberate practice
   * Read -> practice (physical or mental) -> repet => knowledge * experience
   * Dedication - 40h per week trainings.
