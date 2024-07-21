@@ -3,12 +3,13 @@ title: home
 ---
 # {{ "Learn sleep repeat" }}
 
-<a href="/pages/blog.html">Blog</a>
+
+[Blog](/pages/blog.html)
  | 
-<a href="/2024/07/12/ukulele.html">Ukulele</a>
+[Ukulele](/2024/07/12/ukulele.html)
  | 
-<a href="/2024/07/11/yoga.html">Yoga</a>
+[Yoga](/2024/07/11/yoga.html)
  | 
-<a href="/2024/07/13/research.html">Research</a>
- | 
-<a href="/2024/07/14/development.html">Development</a>
+[Research](/2024/07/13/research.html)
+| 
+[Development](/2024/07/14/development.html)
