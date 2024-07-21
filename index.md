@@ -16,11 +16,11 @@ title: home
  | 
 [Development](/2024/07/14/development.html)
  | 
-[Phylosophy](/2024/07/12/ukulele.html)
+[Phylosophy](/2024/01/04/phylosophy.html)
 
 ---
  
-[Science](/2024/07/12/ukulele.html)
+[Science](/2024/01/02/science.html)
  | 
 [Ukulele](/2024/07/12/ukulele.html)
  |
