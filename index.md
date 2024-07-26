@@ -20,7 +20,5 @@ title: home
 
 ---
  
-[Science](/2024/01/02/science.html)
- | 
 [Ukulele](/2024/07/12/ukulele.html)
  |
