@@ -16,7 +16,6 @@ title: home
  | 
 [Development](/2024/07/14/development.html)
  | 
-[Phylosophy](/2024/01/04/phylosophy.html)
 
 ---
  
