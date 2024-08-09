@@ -8,4 +8,4 @@
 * åland
 * italy
 * japan
-* tibet
+* nepal
