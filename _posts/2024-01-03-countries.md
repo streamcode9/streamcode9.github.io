@@ -6,6 +6,7 @@
 * faroe islands
 * finland
 * åland
-* italy
-* japan
-* nepal
+* italy - sicilia
+* japan - jiro
+* nepal - chomolunga
+* shaolin
