@@ -8,7 +8,9 @@ title: home
 
 ---
  
-[Yoga](/2024/07/11/yoga.html) | Specialty coffee
+[Yoga](/2024/07/11/yoga.html)
+ | 
+Specialty coffee
 
 ---
 
