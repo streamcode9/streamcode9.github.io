@@ -14,7 +14,7 @@ Specialty coffee
 
 ---
 
-metaGPT
+
  | 
 [Development](/2024/07/14/development.html)
  | 
