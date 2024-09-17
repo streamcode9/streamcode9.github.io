@@ -21,7 +21,6 @@ Specialty coffee
 
 ---
  
-[Ukulele](/2024/07/12/ukulele.html)
  |
 Norsk
  | 
