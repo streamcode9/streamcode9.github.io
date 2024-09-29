@@ -8,9 +8,8 @@ title: home
 
 ---
  
-[Yoga](/2024/07/11/yoga.html)
+[Workout](/2024/07/11/yoga.html)
  | 
-Specialty coffee
 
 ---
 
@@ -24,4 +23,7 @@ Specialty coffee
  |
 Norsk
  | 
+ Ukulele
+ | 
+ 
 
