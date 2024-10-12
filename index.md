@@ -19,8 +19,7 @@ Science
 Styre
  | 
 Økonomi
- | 
-Hus
+ |
 
 ---
 
