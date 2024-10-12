@@ -23,7 +23,12 @@ title: home
  |
 Norsk
  | 
- Ukulele
+Ukulele 
+ |  
+Music theory  
  | 
+Blazor 
+ |  
+yarn nx
  
 
