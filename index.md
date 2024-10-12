@@ -19,7 +19,6 @@ Science
 Styre
  | 
 Økonomi
- |
 
 ---
 
