@@ -23,12 +23,12 @@ title: home
  |
 Norsk
  | 
-Ukulele 
- |  
-Music theory  
+Ukulele
  | 
-Blazor 
- |  
+Music theory
+ | 
+Blazor
+ | 
 yarn nx
  
 
