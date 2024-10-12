@@ -13,14 +13,16 @@ title: home
 
 ---
 
-
- | 
 [Development](/2024/07/14/development.html)
  | 
+Styre
+ | 
+Økonomi
+ | 
+Hus
 
 ---
- 
- |
+
 Norsk
  | 
 Ukulele
