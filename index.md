@@ -25,7 +25,7 @@ Styre
 Norsk
  | 
 Ukulele
- | 
+ ? 
 Music theory
  | 
 Blazor
