@@ -10,7 +10,7 @@ title: home
  
 [Workout](/2024/07/11/yoga.html)
  | 
-Science
+[Science](/2024/01/02/science.html)
 
 ---
 
