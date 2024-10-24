@@ -24,7 +24,7 @@ Styre
 
 Norsk
  | 
-Ukulele
+[Ukulele](/2024/07/12/ukulele.html)
  ? 
 Music theory
  | 
