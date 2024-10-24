@@ -25,11 +25,9 @@ Styre
 Norsk
  | 
 [Ukulele](/2024/07/12/ukulele.html)
- ? 
-Music theory
  | 
 Blazor
  | 
-yarn nx
+yarn why
  
 
