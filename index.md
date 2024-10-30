@@ -3,7 +3,6 @@ title: home
 ---
 # {{ "Learn sleep repeat" }}
 
-
 [Blog](/pages/blog.html)
 
 ---
