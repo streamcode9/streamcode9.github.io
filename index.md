@@ -11,11 +11,11 @@ title: home
 [Workout](/2024/07/11/yoga.html)
  | 
 [Science](/2024/01/02/science.html)
-:Math
+ : Math
 ---
 
 [Development](/2024/07/14/development.html)
-:AI,SaaS
+: AI, SaaS
  | 
 Styre
  | 
