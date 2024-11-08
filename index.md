@@ -16,14 +16,14 @@ Norsk
 AI
  | 
 SaaS team management
- | 
-Math
+
 
 ---
 
 Styre
  | 
 Økonomi
-
+ | 
+Math
  
 
