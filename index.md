@@ -6,22 +6,24 @@ title: home
 [Blog](/pages/blog.html)
 
 ---
- 
-[Workout](/2024/07/11/yoga.html)
+
+Warmup Baduanjin
  | 
-[Science](/2024/01/02/science.html)
- 
+Norsk
+
 ---
 
-[Development](/2024/07/14/development.html)
+AI
  | 
+SaaS team management
+ | 
+Math
+
+---
+
 Styre
  | 
 Økonomi
-
----
-
-Norsk
 
  
 
