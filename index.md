@@ -25,5 +25,9 @@ Styre
 Økonomi
  | 
 Math
+
+---
+
+Uke
  
 
