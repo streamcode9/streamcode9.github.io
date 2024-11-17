@@ -13,7 +13,7 @@ Norsk
 
 ---
 
-AI
+AI: ChatGPT, Claude, Mistral и Gemini, Llama
  | 
 SaaS team management
 
