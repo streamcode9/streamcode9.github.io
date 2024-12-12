@@ -39,7 +39,9 @@ title: Music theory
 * If we have a name of '#' scale, step down 0.5 tone to find out amount of '#'
 * Bb major => scale with 'b' as it is presented in the name
   * Bb note will have 'b'
-  * we need to add one more 'b' => Eb (see 'b' order) 
+  * we need to add one more 'b' => Eb (see 'b' order)
+  * N 'b', name of scale = -1 (previous). For example 2b = 2-1 => Bb major
+* Minor scale (C minor), to understand whether it has bemols or dieseses => step up on a small tercia (Eb) 
 * лады народной музыки
   * мажорные лады 
     * лидийский будуеться только в мажоре с повышенной 4 ступенью
