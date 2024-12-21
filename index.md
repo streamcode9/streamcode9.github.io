@@ -25,6 +25,26 @@ Hus: Styre
 
 ---
 
+By/kommune
+
+---
+
+Land
+
+---
+
+Industry
+
+---
+
+Earth
+
+---
+
+Universe
+
+---
+
 AI: ChatGPT, Claude, Mistral, Gemini, Llama, Aider
  | 
 SaaS team management
