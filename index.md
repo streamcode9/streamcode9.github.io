@@ -15,15 +15,22 @@ Health
 
 ---
 
+family
+
+---
+
+house: Styre
+ | 
+Økonomi
+
+---
+
 AI: ChatGPT, Claude, Mistral, Gemini, Llama, Aider
  | 
 SaaS team management
 
 ---
 
-Styre
- | 
-Økonomi
  | 
 Math
  | 
