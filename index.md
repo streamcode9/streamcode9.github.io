@@ -7,7 +7,7 @@ title: home
 
 ---
 
-Helse
+[Health](/2024/07/11/yoga.html)
  | 
 🇳🇴
  | 
