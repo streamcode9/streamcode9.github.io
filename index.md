@@ -7,7 +7,7 @@ title: home
 
 ---
 
-Health
+Helse
  | 
 🇳🇴
  | 
@@ -15,11 +15,11 @@ Health
 
 ---
 
-family
+Family
 
 ---
 
-house: Styre
+Hus: Styre
  | 
 Økonomi
 
