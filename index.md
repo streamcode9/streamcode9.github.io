@@ -25,6 +25,10 @@ Hus: Styre
 
 ---
 
+Firma
+
+---
+
 By/kommune
 
 ---
