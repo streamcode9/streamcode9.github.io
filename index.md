@@ -7,17 +7,11 @@ title: home
 
 ---
 
-[Health](/2024/07/11/yoga.html)
- | 
-🇳🇴
- | 
-🇬🇧 
- | 
- 🎸
- | 
-🎵 
- | 
-🎹
+* [Health](/2024/07/11/yoga.html)
+* Norsk
+* English
+* Ukulele
+* [Music theory](/2024/11/05/music-theory.html)
 
 ---
 
