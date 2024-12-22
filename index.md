@@ -25,9 +25,7 @@ Family
 
 ---
 
-Hus: Styre
- | 
-Økonomi
+Hus: styre, økonomi
 
 ---
 
@@ -43,9 +41,7 @@ Land
 
 ---
 
-Industry: 
- | 
-AI, ChatGPT, Claude, Mistral, Gemini, Llama, Aider 
+Industry: AI, ChatGPT, Claude, Mistral, Gemini, Llama, Aider 
  | 
 SaaS team management 
  | 
@@ -61,8 +57,7 @@ Universe: astronomy
 
 ---
 
-Everything: Math 
- | 
+Everything: math 
 
 ---
 
