@@ -10,7 +10,7 @@ title: home
 * [Health](/2024/07/11/yoga.html)
 * Norsk
 * English
-* Ukulele
+* [Ukulele](/2024/07/12/ukulele.html)
 * [Music theory](/2024/11/05/music-theory.html)
 
 ---
