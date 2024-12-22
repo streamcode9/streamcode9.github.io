@@ -43,7 +43,8 @@ Land
 
 ---
 
-Industry:
+Industry 
+ | 
 AI, ChatGPT, Claude, Mistral, Gemini, Llama, Aider 
  | 
 SaaS team management 
