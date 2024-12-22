@@ -11,7 +11,11 @@ title: home
  | 
 🇳🇴
  | 
-🇬🇧
+🇬🇧 
+ | 
+ 🎸
+ | 
+🎵 🎹
 
 ---
 
@@ -39,9 +43,9 @@ Land
 
 Industry: AI, ChatGPT, Claude, Mistral, Gemini, Llama, Aider
  | 
-SaaS team management
-
----
+SaaS team management 
+ | 
+Computer Systems from the Ground Up
 
 ---
 
@@ -49,7 +53,7 @@ Earth: sustainability
 
 ---
 
-Universe
+Universe: astronomy
 
 ---
 
@@ -58,10 +62,7 @@ Everything
  | 
 Math
  | 
-Computer Systems from the Ground Up
 
 ---
 
-🎸
- | 
-🎵 🎹
+
