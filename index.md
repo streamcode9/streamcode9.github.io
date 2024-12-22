@@ -43,7 +43,7 @@ Land
 
 ---
 
-Industry 
+Industry: 
  | 
 AI, ChatGPT, Claude, Mistral, Gemini, Llama, Aider 
  | 
@@ -61,10 +61,7 @@ Universe: astronomy
 
 ---
 
-Everything
-
- | 
-Math
+Everything: Math 
  | 
 
 ---
