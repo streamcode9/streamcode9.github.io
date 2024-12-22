@@ -41,11 +41,10 @@ Land
 
 ---
 
-Industry: AI, ChatGPT, Claude, Mistral, Gemini, Llama, Aider 
- | 
-SaaS team management 
- | 
-Computer Systems from the Ground Up
+Industry:
+ * ChatGPT, Claude, Mistral, Gemini, Llama, Aider
+ * SaaS team management
+ * Computer Systems from the Ground Up
 
 ---
 
