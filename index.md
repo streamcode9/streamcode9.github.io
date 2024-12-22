@@ -37,7 +37,11 @@ Land
 
 ---
 
-Industry
+Industry: AI, ChatGPT, Claude, Mistral, Gemini, Llama, Aider
+ | 
+SaaS team management
+
+---
 
 ---
 
@@ -49,11 +53,7 @@ Universe
 
 ---
 
-AI: ChatGPT, Claude, Mistral, Gemini, Llama, Aider
- | 
-SaaS team management
-
----
+Everything
 
  | 
 Math
