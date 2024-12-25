@@ -13,6 +13,7 @@ title: home
 * [Ukulele](/2024/07/12/ukulele.html)
 * [Music theory](/2024/11/05/music-theory.html)
 * [Music](/2024/07/02/music.html)
+* [Literature](/2024/06/30/literature.html)
 
 ---
 
