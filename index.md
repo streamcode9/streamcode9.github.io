@@ -24,6 +24,7 @@ Hus: styre, økonomi
 ---
 
 Firma
+* [SWE](/2024/07/14/development.html)
 
 ---
 
@@ -51,7 +52,8 @@ Universe: astronomy
 ---
 
 Everything:
-* [science](/2024/01/02/science.html)
+* [Science](/2024/01/02/science.html)
+* [Phylosophy](/2024/01/04/phylosophy.html)
 
 
 ---
