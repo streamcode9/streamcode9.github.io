@@ -16,6 +16,7 @@ title: home
 ---
 
 Family
+* [Schedule](/2024/07/13/research.html)
 
 ---
 
