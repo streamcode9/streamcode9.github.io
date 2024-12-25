@@ -49,7 +49,7 @@ Earth: sustainability
 
 ---
 
-Universe: astronomy
+Universe:
 
 ---
 
