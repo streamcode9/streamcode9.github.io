@@ -50,7 +50,9 @@ Universe: astronomy
 
 ---
 
-Everything: math 
+Everything:
+* [science](/2024/01/02/science.html)
+
 
 ---
 
