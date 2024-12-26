@@ -1,4 +1,5 @@
 * Escapism
+* Buddhism
 * Learn by doing
 * 3x5 why analysis
 * Deliberate practice
