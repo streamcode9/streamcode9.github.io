@@ -42,7 +42,8 @@ Land
 
 Industry:
  * ChatGPT, Claude, Mistral, Gemini, Llama, Aider
- * SaaS team management
+ * SaaS
+ * Kanban
  * Computer Systems from the Ground Up
 
 ---
