@@ -24,8 +24,8 @@ Family
 ---
 
 Hus:
-* styre
-* økonomi
+* Styre
+* Økonomi
 
 ---
 
