@@ -3,10 +3,6 @@ title: home
 ---
 # {{ "Learn sleep repeat" }}
 
-[Blog](/pages/blog.html)
-
----
-
 * [Health](/2024/07/11/yoga.html)
 * Norsk
 * English
@@ -15,6 +11,9 @@ title: home
 * [Music](/2024/07/02/music.html)
 * [Literature](/2024/06/30/literature.html)
 * [Art](/2024/07/03/art.html)
+* [Games](/2024/01/01/games.html)
+* [Cinema](/2024/01/05/cinema.html)
+* [Travel](/2024/01/03/countries.html)
 
 ---
 
