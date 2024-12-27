@@ -23,7 +23,9 @@ Family
 
 ---
 
-Hus: styre, økonomi
+Hus:
+* styre
+* økonomi
 
 ---
 
