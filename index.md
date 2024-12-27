@@ -14,6 +14,7 @@ title: home
 * [Games](/2024/01/01/games.html)
 * [Cinema](/2024/01/05/cinema.html)
 * [Travel](/2024/01/03/countries.html)
+* [Hardware](https://github.com/streamcode9/software-design/blob/master/laptop.md)
 
 ---
 
@@ -27,7 +28,6 @@ Hus: styre, økonomi
 ---
 
 Firma
-* [SWE](/2024/07/14/development.html)
 
 ---
 
@@ -40,10 +40,11 @@ Land
 ---
 
 Industry:
- * ChatGPT, Claude, Mistral, Gemini, Llama, Aider
- * SaaS
- * Kanban
- * Computer Systems from the Ground Up
+* ChatGPT, Claude, Mistral, Gemini, Llama, Aider
+* SaaS
+* Kanban
+* Computer Systems from the Ground Up
+* [Principles](https://github.com/streamcode9/software-design/blob/master/README.md)
 
 ---
 
