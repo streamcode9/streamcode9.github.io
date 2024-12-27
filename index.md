@@ -18,7 +18,7 @@ title: home
 ---
 
 Family
-* [Schedule](/2024/07/13/research.html)
+* [Schedule](https://github.com/streamcode9/os/blob/main/README.md)
 
 ---
 
