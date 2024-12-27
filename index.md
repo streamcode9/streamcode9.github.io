@@ -48,7 +48,8 @@ Industry:
 
 ---
 
-Earth: sustainability
+Earth:
+* [Sustainability](https://en.wikipedia.org/wiki/Sustainability)
 
 ---
 
