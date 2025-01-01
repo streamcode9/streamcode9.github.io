@@ -9,4 +9,6 @@
 * italy - sicilia
 * japan - jiro
 * nepal - chomolunga
-* shaolin
+* china - shaolin
+* south korea
+* india
