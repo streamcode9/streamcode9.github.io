@@ -36,7 +36,7 @@ title: Music theory
 * Notes in C major:	C	 	D	 	E	 	F	 	G	 	A	 	B	 	C
 * https://en.wikipedia.org/wiki/Diatonic_scale
 * If scale has N '#' => take N '#' note and step up for 0.5 tone to find out scale name
-* If we have a name of '#' scale, step down 0.5 tone to find out amount of '#'
+* If we have a name of '#' scale, step down малую секунду (0.5 tone) to find out amount of '#'
 * Bb major => scale with 'b' as it is presented in the name
   * Bb note will have 'b'
   * we need to add one more 'b' => Eb (see 'b' order)
