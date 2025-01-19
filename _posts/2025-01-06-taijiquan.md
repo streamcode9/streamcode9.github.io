@@ -15,7 +15,12 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
 * Tui Shou (Push hands – topersonsøvelser);
 * Selvforsvar.
 
-
+## Litteratur
+* David Gaffney & Davidine Sim – The source of Taijiquan.
+* David Gaffney & Davidine Sim – The essence of Taijiquan.
+* Chen Xiaowang – The five levels of Taijiquan.
+* Jan Silberstorff – Chen: Living Taijiquan in the Classical Style
+* Mark Chen – Old Frame Chen family Taijiquan.
 
 ## Resources
 * wikipedia
