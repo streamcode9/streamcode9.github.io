@@ -22,6 +22,13 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
 * Jan Silberstorff – Chen: Living Taijiquan in the Classical Style
 * Mark Chen – Old Frame Chen family Taijiquan.
 
+## Lineage
+* Arild Amland
+* Øystein Alsaker <- Xia Xufeng <- Chen Shitong
+  * Yang Jun, Huang Kanghui, Chen Xiaowang, Chen Xiaoxing and Chen Ziqiang 
+* David Gaffney
+* Davidine Siaw-Voon Sim
+
 ## Resources
 * wikipedia
 * taijiquan federation
