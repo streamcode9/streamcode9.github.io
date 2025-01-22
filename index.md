@@ -42,7 +42,7 @@ Land
 ---
 
 Industry:
-* ChatGPT, Claude, Mistral, Gemini, Llama, Aider, Deepseek, vscode copilot
+* ChatGPT, Claude
 * SaaS
 * Kanban
 * Computer Systems from the Ground Up
