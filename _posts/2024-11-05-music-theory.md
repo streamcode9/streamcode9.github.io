@@ -3,9 +3,16 @@ title: Music theory
 ---
 
 ## Music theory
+
+### Notes
+* Стойкие и нестойкие ноты (устойчивые ступени)
+* В любой тональности 1, 3, 5 ступени - стойкие => 2, 4, 6, 7 are not stable
+* 
+
 ### Intervals
 * https://en.wikipedia.org/wiki/Interval_(music)
 * Такт - расстояние до палочки
+
 ### Chords
 * https://en.wikipedia.org/wiki/Chord_(music)
 * Major triad https://en.wikipedia.org/wiki/Major_chord
@@ -20,6 +27,9 @@ title: Music theory
   * D53 = dominant chord is built on 5 stage in scale C major = G B D
     * Dominant chord in minor scale must be built in harmonic way and always = M3+m3 
 * 4х звучный аккорд состоит из 3 интервалов
+  * Доминант септ аккордд розв`язуеться в неповный тонический тризвук (одну ноту - 5ую - квинту не играем)
+  * Тональность ми мажор, D7 = B + D# + F# + A
+  * T53(неповний) = G# + E + E + E
   
 ### Scales
 * Порядок появления '#', 'b'
