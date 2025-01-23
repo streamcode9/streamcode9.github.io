@@ -28,6 +28,7 @@ title: Music theory
     * Dominant chord in minor scale must be built in harmonic way and always = M3+m3 
 * 4х звучный аккорд состоит из 3 интервалов
   * Доминант септ аккордд розв`язуеться в неповный тонический тризвук (одну ноту - 5ую - квинту не играем) с утроенной тоникой
+  * E major -> E + G# + B -> B do not play -> E = tonizca => E + E + E + G#
   * Тональность ми мажор, D7 = B + D# + F# + A
   * Устойчивые ноты в ми мажоре = E G# B
   * 1 обернення = D# F# A B => розвязали в E  + G# + B
