@@ -12,6 +12,8 @@
   * New skills are considered not separately, but in connection with all other skills
   * Knowledge of a few principles relieves the need to know many facts
   * Accordingly, if you learn a general principle, you should eliminate redundancy in your mind to make room for more information
+  * Study what you use constantly
+  * Replace specific knowledge that you use constantly with general knowledge of the same kind
 * You don't stop learning
   because you grow old.
   You grow old
