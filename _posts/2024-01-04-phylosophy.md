@@ -9,6 +9,7 @@
   * Mental training - imagine all possible situations and your actions
   * Analyze past situations. What was done bad? What can be done better?
   * Analyze possible solutions -> make decision -> retro -> repeat => decision making experience
+  * This is also part of deliberate practice, where new skills are considered not separately, but in connection with all other skills.
 * You don't stop learning
   because you grow old.
   You grow old
