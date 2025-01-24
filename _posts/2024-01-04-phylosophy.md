@@ -1,5 +1,6 @@
 * Escapism
 * Learn by doing
+* Doing something poorly today is better than doing something well but never.
 * The point of learning new framework  is not to accomplish something with it, but rather to engage in deliberate practice to understand its limitations as a technology. But if you’re coding just for the sake of it without producing anything tangible, it’s a waste of time—there should be artifacts of your efforts left behind.
 * 3x5 why analysis
 * Deliberate practice
