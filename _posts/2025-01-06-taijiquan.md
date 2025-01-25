@@ -33,7 +33,10 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
     * Yang Luchan
     * Chen Fake <- Chen Yanxi <- Chen Gengyun <- Chen Youben (xiǎo jià)
       * Chen Zhaopei
+        * Chen Xiaowang
+        * Chen Zhenglei
       * Chen Zhaokui
+        * Chen Yu 
       * Tang Hao 
 
 ## Resources
