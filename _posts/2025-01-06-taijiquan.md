@@ -4,17 +4,18 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
 ## Training process
 * Warmup
 * Ji Ben Gong
-  * silk reeling
+  * Silk reeling
   * Zhan zhuang
-  * grunnleggende stillinger og steg
-* Laojia Yi Lu (Gammel stil, første form) – 74 bevegelser, sakte form med noen hurtige bevegelser;
-  * https://en.wikipedia.org/wiki/Chen-style_Laojia_forms
-* Laojia Er Lu (Gammel stil, andre form) – 43 bevegelser, hurtig form;   Også kalt Pao Chui – cannon fist;
-  * https://en.wikipedia.org/wiki/Chen-style_Laojia_forms
-* Chen stil Taiji Jian (Sverd – 49 bevegelser);
-  * https://en.wikipedia.org/wiki/Chen-style_Laojia_forms
-* Tui Shou (Push hands – topersonsøvelser);
-* Selvforsvar.
+  * Grunnleggende stillinger og steg
+* Forms serve as repositories for various methods, techniques, stances, and types of energy and force production
+  * Laojia Yi Lu (Gammel stil, første form) – 74 bevegelser, sakte form med noen hurtige bevegelser
+    * https://en.wikipedia.org/wiki/Chen-style_Laojia_forms
+  * Laojia Er Lu (Gammel stil, andre form) – 43 bevegelser, hurtig form;   Også kalt Pao Chui – cannon fist
+    * https://en.wikipedia.org/wiki/Chen-style_Laojia_forms
+  * Chen stil Taiji Jian (Sverd – 49 bevegelser)
+    * https://en.wikipedia.org/wiki/Chen-style_Laojia_forms
+* Tui Shou (Push hands – topersonsøvelser)
+* Selvforsvar
 
 ## Litteratur
 * David Gaffney & Davidine Sim – The source of Taijiquan.
