@@ -29,7 +29,7 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
 * David Gaffney & Davidine Siaw-Voon Sim
 * Chen Wangting
   * ...
-  * Chen Changxing
+  * Chen Changxing: lao jia = yilu + erlu
     * Yang Luchan
     * Chen Fake <- Chen Yanxi <- Chen Gengyun <- Chen Youben
       * Chen Zhaopei
