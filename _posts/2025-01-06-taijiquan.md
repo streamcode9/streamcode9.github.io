@@ -26,7 +26,6 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
 ## Lineage
 * Arild Amland
 * Øystein Alsaker <- Xia Xufeng <- Chen Shitong
-* David Gaffney & Davidine Siaw-Voon Sim
 * Chen Wangting
   * ...
   * Chen Changxing: lao jia = yilu + erlu
@@ -34,6 +33,7 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
     * Chen Fake <- Chen Yanxi <- Chen Gengyun <- Chen Youben (xiǎo jià)
       * Chen Zhaopei
         * Chen Xiaowang
+          * David Gaffney 
         * Chen Zhenglei
       * Chen Zhaokui
         * Chen Yu 
