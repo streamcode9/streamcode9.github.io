@@ -23,7 +23,7 @@ Family
 
 ---
 
-Hus:
+[Hus](/2025/01/28/hus.htlm)
 * Styre
 * Økonomi
 
