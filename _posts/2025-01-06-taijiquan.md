@@ -34,7 +34,7 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
     * Chen Zhaopei
       * Chen Zhenglei
     * Chen Zhaoxu
-      *  Chen Xiaowang
+      * Chen Xiaowang
         * Chen Yingjun 
         * David Gaffney
           * Arild Amland <- Øystein Alsaker <- Xia Xufeng <- Chen Shitong 
