@@ -42,9 +42,6 @@ Land
 ---
 
 Industry:
-* ChatGPT, Claude
-* SaaS
-* Kanban
 * Computer Systems from the Ground Up
 * [Principles](https://github.com/streamcode9/software-design/blob/master/README.md)
 
