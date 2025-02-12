@@ -8,6 +8,9 @@
 * Nikola Gogol
 * German Gesse
 * Balsak
+* Pehov
+* Joe Abercrombie
+* Abercrombie
 * Morua
 * Somerset Moem
 * Prosper Merime
