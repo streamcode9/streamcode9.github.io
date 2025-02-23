@@ -11,4 +11,3 @@
 * nepal - chomolunga
 * china - shaolin
 * south korea
-* india
