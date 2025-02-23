@@ -15,7 +15,7 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
   * Chen stil Taiji Jian (Sverd – 49 bevegelser)
     * https://en.wikipedia.org/wiki/Chen-style_Laojia_forms
 * Tui Shou (Push hands – topersonsøvelser)
-* Selvforsvar
+* Selvforsvar/sanshou
 
 ## Litteratur
 * David Gaffney & Davidine Sim – The source of Taijiquan.
