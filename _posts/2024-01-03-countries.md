@@ -11,3 +11,6 @@
 * nepal - chomolunga
 * china - shaolin
 * south korea
+* austria
+* switzerland
+* lihtenstein
