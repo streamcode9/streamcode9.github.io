@@ -29,10 +29,6 @@ Family
 
 ---
 
-Firma
-
----
-
 By/kommune
 
 ---
@@ -42,22 +38,22 @@ Land
 
 ---
 
-Industry:
+Profession
 * Computer Systems from the Ground Up
 * [Principles](https://github.com/streamcode9/software-design/blob/master/README.md)
 
 ---
 
-Earth:
+Earth
 * [Sustainability](https://en.wikipedia.org/wiki/Sustainability)
 
 ---
 
-Universe:
+Universe
 
 ---
 
-Everything:
+Everything
 * [Science](/2024/01/02/science.html)
 * [Phylosophy](/2024/01/04/phylosophy.html)
 
