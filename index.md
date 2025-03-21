@@ -25,7 +25,7 @@ Family
 
 [Hus](/2025/01/28/hus.html)
 * Styre
-* Økonomi
+* Familie økonomi
 
 ---
 
