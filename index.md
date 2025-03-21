@@ -29,11 +29,7 @@ Family
 
 ---
 
-By/kommune
-
----
-
-Land
+By/Kommune/Land
 * Valg
 
 ---
