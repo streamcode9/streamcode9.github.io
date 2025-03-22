@@ -3,16 +3,12 @@ title: home
 ---
 # {{ "Learn sleep repeat" }}
 
-* [Health](/2024/07/11/yoga.html)
+[Health](/2024/07/11/yoga.html)
 
 ---
 
-Family
+[Familie og Hus](/2025/01/28/hus.html)
 * [Schedule](https://github.com/streamcode9/os/blob/main/README.md)
-
----
-
-[Hus](/2025/01/28/hus.html)
 * Styre
 * Familie økonomi
 
