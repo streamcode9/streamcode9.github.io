@@ -32,6 +32,5 @@ Earth
 
 Universe and Everything
 * [Science](/2024/01/02/science.html)
-* [Phylosophy](/2024/01/04/phylosophy.html)
 
 ---
