@@ -6,7 +6,6 @@
 * 3x5 why analysis
 * Deliberate practice
   * Mental training - imagine all possible situations and your actions
-  * Analyze past situations. What was done bad? What can be done better?
   * Analyze possible solutions -> make decision -> retro -> repeat => decision making experience
   * New skills are considered not separately, but in connection with all other skills
   * Knowledge of a few principles relieves the need to know many facts
