@@ -4,9 +4,6 @@ title: home
 # {{ "Learn sleep repeat" }}
 
 * [Health](/2024/07/11/yoga.html)
-* Norsk
-* English
-* [Hardware](https://github.com/streamcode9/software-design/blob/master/laptop.md)
 
 ---
 
