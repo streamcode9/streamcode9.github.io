@@ -1,6 +1,9 @@
 ## Term
 Taijiquan - is an ancient Chinese martial art. Initially developed for combat and self-defense, for most practitioners it has evolved into a sport and form of exercise.
 
+## Phylosophy
+* kungfu/gōngfu 
+
 ## Training process
 * Warmup
 * Ji Ben Gong
