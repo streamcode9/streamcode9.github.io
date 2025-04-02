@@ -21,6 +21,7 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
 ### Phylosophy
 * kungfu/gōngfu
 * tao te ching
+* Zhuang Zhou
 
 ## Litteratur
 * David Gaffney & Davidine Sim – The source of Taijiquan.
