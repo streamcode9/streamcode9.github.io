@@ -7,6 +7,7 @@
   * [Games](/2024/01/01/games.html)
   * [Cinema](/2024/01/05/cinema.html)
   * [Travel](/2024/01/03/countries.html)
+  * Origami
 * Education = dedication
   * Learn by doing
   * You don't stop learning
