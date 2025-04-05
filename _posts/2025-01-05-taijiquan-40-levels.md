@@ -190,3 +190,152 @@ each building systematically on physical mechanics, internal work, martial appli
 - The form is no longer a sequence—**it becomes you**.
 
 ---
+
+A **comprehensive self-study program for Chen-style Taijiquan** designed to progress from complete beginner to advanced practitioner. This program builds progressively over several stages, focusing on **physical mechanics, internal energy (Qi), martial applications**, and **mental-spiritual development**, while integrating **forms, drills, breathwork, and theoretical understanding**.
+
+---
+
+## **PROGRAM STRUCTURE OVERVIEW**
+
+### **Training Levels**:
+1. **Foundation (Beginner)** – 0–6 months
+2. **Integration (Intermediate)** – 6–18 months
+3. **Expression (Advanced)** – 18 months–3+ years
+
+---
+
+## **LEVEL 1: FOUNDATION (0–6 MONTHS)**  
+**Goal:** Build body awareness, coordination, and grasp fundamental concepts of Taiji movement, structure, and energy pathways.
+
+### **Core Concepts**:
+- **Song (Relaxation)** – Release tension while maintaining structure
+- **Peng (Expansive Energy)** – Internal buoyancy or structural integrity
+- **Root (Gen)** – Stability through connection to the earth
+- **Silk Reeling (Chan Si Jin)** – Spiral energy in movement
+
+### **Daily Routine** (45–60 mins/day)
+- **Standing Meditation (Zhan Zhuang)** – 10–15 mins
+- **Silk Reeling Exercises (Chan Si Gong)** – 15–20 mins
+- **Basic Stances** – Horse, bow, empty stance – 5–10 mins
+- **Form Work: Lao Jia Yi Lu (1st Routine)** – Learn first 10–15 movements slowly
+- **Breathwork & Mindfulness** – 5 mins abdominal breathing
+
+### **Key Practices**:
+- **Zhan Zhuang (Post Standing)** – Start with Wuji (neutral posture), build up to Chen-style stances.
+- **Silk Reeling Basics**:
+  - Horizontal and vertical arm circles
+  - Coordinated with waist turning (yao) and kua opening
+- **Movement Drills**:
+  - Weight shifting exercises
+  - Slow stepping (heel-ball-toe), attention to balance and root
+
+### **Study Topics**:
+- Principles of Yin/Yang in movement
+- Structure & relaxation
+- Introduction to Qi (what it is and isn’t), breath & intention
+- Videos/books on Chen Fake, Chen Xiaowang, Chen Zhenglei
+
+---
+
+## **LEVEL 2: INTEGRATION (6–18 MONTHS)**  
+**Goal:** Combine mechanics with intention (Yi), refine silk reeling, complete the Lao Jia Yi Lu, and begin exploring martial application and push hands.
+
+### **Core Concepts**:
+- **Yi (Intent) guides Qi, Qi moves body**
+- **Dantian rotation** – central to power generation
+- **Fajin** – explosive release of energy
+- **Six Harmonies (Liu He)** – internal (Xin-yi, yi-qi, qi-li) & external (shoulders-hips, elbows-knees, hands-feet)
+
+### **Daily Routine** (60–90 mins/day)
+- **Zhan Zhuang** – 10 mins
+- **Silk Reeling + Integrated Movement Drills** – 15–20 mins
+- **Lao Jia Yi Lu (Full Form)** – 30–40 mins
+  - Practice section by section, then as a whole
+- **Basic Fajin Exercises** – 10–15 mins
+  - Start with slow build-ups (shaking, stomping, short explosive moves)
+- **Breath & Dantian Work** – 10 mins (combine movement + breath)
+
+### **New Practices**:
+- **Tuishou (Push Hands) Introduction**:
+  - Fixed-step single-hand
+  - Learn listening energy (Ting Jin), sticking (Zhan), following (Sui), neutralizing (Hua)
+- **Martial Applications**:
+  - Breakdown postures from form into practical use (ward off, pull, press, etc.)
+
+### **Study Topics**:
+- Internal anatomy of movement (Dantian, kua, spine)
+- Function of fascia in Taiji
+- The role of Shen (spirit/awareness)
+- Reading: “The Essence of Taiji Qigong” by Yang Jwing-Ming, Chen Zhenglei’s Taiji theory
+
+---
+
+## **LEVEL 3: EXPRESSION (18 MONTHS–3+ YEARS)**  
+**Goal:** Express energy freely through form, apply martial techniques, refine internal power (Nei Jin), deepen stillness and intention.
+
+### **Core Concepts**:
+- **Nei Jin (Internal Power)** – refined, soft strength
+- **Hua Jin** – neutralizing force
+- **Shen Ming** – spirit-brightening; awareness and presence
+- **Free Fajin** – spontaneous explosive movement
+
+### **Daily Routine** (90+ mins/day)
+- **Meditation + Breath Work** – 20 mins (still & moving)
+- **Silk Reeling + Spiral Drills** – 10–15 mins
+- **Lao Jia Yi Lu (with variations, martial focus)** – 30 mins
+- **Erlu (Cannon Fist)** – 15–20 mins
+  - Focus on Fajin, striking, momentum
+- **Push Hands + Partner Drills** – 20–30 mins (if possible)
+- **Qigong (Neigong sets)** – for energy cultivation, e.g. Five Element Neigong
+
+### **New Practices**:
+- **Free Form Practice** – spontaneous movement based on principles
+- **Advanced Push Hands**:
+  - Moving step
+  - Freestyle
+- **Weapon Forms** (optional):
+  - Taiji sword (Jian)
+  - Taiji spear (Qiang) – integrates Chan Si Jin
+
+### **Study Topics**:
+- Energy maps (meridians, Dantian circulation)
+- Buddhist/Daoist internal alchemy concepts
+- Meditation for martial clarity (Zuo Chan)
+
+---
+
+## **KEY CONCEPTS EXPLAINED**
+
+### **Silk Reeling (Chan Si Jin)**  
+Spiral energy generated from the ground up through coordinated, circular, and connected movements. It trains whole-body power, balance, and qi flow.
+
+### **Fajin**  
+Explosive release of energy. Not muscular but a sudden release of stored elastic energy through correct structure and intent. Starts from the Dantian, transmitted through a relaxed body.
+
+### **Root (Gen)**  
+Sinking your center of gravity, maintaining stable connection to the ground. Enables power transmission and absorption.
+
+---
+
+## **SUGGESTED RESOURCES**
+
+### **Books**:
+- *The Way of Energy* – Lam Kam Chuen (for standing work)
+- *Chen Style Taijiquan: The Source of Taiji Boxing* – David Gaffney & Davidine Sim
+- *The Essence of Taijiquan* – Chen Zhenglei
+
+### **Videos/Courses**:
+- Chen Xiaowang’s Laojia Yilu instructional
+- Chen Bing’s Silk Reeling and Push Hands
+- Chen Ziqiang’s Cannon Fist (Erlu) tutorials
+
+---
+
+## **FINAL NOTES**
+
+- **Record yourself** frequently to assess posture and form
+- **Train slowly**, with full awareness—internal power can only develop through precision and patience
+- Seek **periodic in-person correction**, if possible (even once every few months is gold)
+- **Martial intent (Yi)** should always be present, even in soft movement
+- **Journaling**: Keep a training journal to track physical, emotional, and energetic experiences
+
