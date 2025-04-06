@@ -74,6 +74,7 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
 ## Resources
 * wikipedia
 * taijiquan federation
+* https://www.taiji-bg.com/
 * https://www.ctnd.de/english
 * https://www.chentaijiquangb.com/
 * https://www.wctag.de/
