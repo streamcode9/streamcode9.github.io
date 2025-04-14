@@ -8,6 +8,7 @@
   * [Cinema](/2024/01/05/cinema.html)
   * [Travel](/2024/01/03/countries.html)
   * Origami
+* Humanism
 * Education = dedication
   * Learn by doing
   * You don't stop learning
