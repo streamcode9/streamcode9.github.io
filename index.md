@@ -37,3 +37,5 @@ Universe and Everything
 * [Science](/2024/01/02/science.html)
 
 ---
+
+[all](/pages/blog)
