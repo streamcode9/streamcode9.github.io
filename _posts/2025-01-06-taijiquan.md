@@ -66,6 +66,7 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
 * Chen Xiaoxing
 * Wang Xi`an
 * Zhu Tiancai
+* Ma Hong
 ---
 * Chen Xianglin
 * Chen Ziqiang
