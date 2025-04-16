@@ -49,7 +49,7 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
 * Chen Changxing: lao jia = yilu + erlu
   * Yang Luchan
   * Chen Fake <- Chen Yanxi <- Chen Gengyun <- Chen Youben (xiǎo jià)
-    * Feng Zhiqiang
+    * Feng Zhiqiang (18)
     * Hong Junsheng
     * Tian Xiuchen
     * Chen Zhaopei
@@ -59,7 +59,7 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
         * Chen Yingjun 
         * David Gaffney
           * Arild Amland <- Øystein Alsaker <- Xia Xufeng <- Chen Shitong 
-    * Chen Zhaokui -> Chen Yu
+    * Chen Zhaokui -> Chen Yu (19)
 * Tang Hao
 * Gu Liuxin
 * Sun Lutang
