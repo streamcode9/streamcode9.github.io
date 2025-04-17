@@ -38,4 +38,5 @@ Universe and Everything
 
 ---
 
-[all](/pages/blog)
+Misc
+* [Latest posts](/pages/blog)
