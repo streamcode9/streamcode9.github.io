@@ -26,7 +26,8 @@
 
 ### 3. **Matrix/Grid Structure**
 - **Best for:** Comparing things across dimensions.
-- **Example:**  
+- **Example:**
+
   | Theory | Advantages | Weaknesses | Use Cases |
   |--------|------------|------------|-----------|
   | A      | Fast       | Inaccurate | X         |
