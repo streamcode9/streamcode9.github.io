@@ -20,6 +20,7 @@ By/Kommune/Land
 ---
 
 Profession
+* [Organizing Knowledge](/2025/04/05/organizing-knowledge.html)
 * Computer Systems from the Ground Up
 * [Principles](https://github.com/streamcode9/software-design/blob/master/README.md)
 
