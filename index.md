@@ -20,9 +20,6 @@ By/Kommune/Land
 ---
 
 Profession
-* rssSummarizer
-* tech lead assistant
-* type theory TS
 * Computer Systems from the Ground Up
 * [Principles](https://github.com/streamcode9/software-design/blob/master/README.md)
 
