@@ -46,9 +46,10 @@ Taijiquan - is an ancient Chinese martial art. Initially developed for combat an
 ## Lineage
 * Chen Wangting
 * ...
-* Chen Changxing: lao jia = yilu + erlu
-  * Yang Luchan
-  * Chen Fake <- Chen Yanxi <- Chen Gengyun <- Chen Youben (xiǎo jià)
+* Chen Changxing: lao jia = yilu + erlu | «старая ветвь» (лао цзя 老架)
+  * Yang Luchan -> Ян Чэнфу (楊澄甫)
+  * Чэнь Цинпин (陳清萍) -> У Юйсян (武禹襄)
+  * Chen Fake <- Chen Yanxi <- Chen Gengyun <- Chen Youben (xiǎo jià) | «новая ветвь» (синь цзя 新架) ~ «новая ветвь Чжаобао» (чжаобао синь цзя 趙堡新架)
     * Feng Zhiqiang (18)
     * Hong Junsheng
     * Tian Xiuchen
