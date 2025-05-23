@@ -9,13 +9,13 @@ title: home
 
 [Familie og Hus](/2025/01/28/hus.html)
 * [Schedule](https://github.com/streamcode9/os/blob/main/README.md)
-* Styre
+* Styre: obos, vibbo, styrerommet, mittanbud
 * Familie økonomi
 
 ---
 
 By/Kommune/Land
-* Valg
+* Valg: valgomat
 
 ---
 
