@@ -20,7 +20,6 @@ By/Kommune/Land
 ---
 
 Profession
-* [Organizing Knowledge](/2025/04/05/organizing-knowledge.html)
 * [Principles](https://github.com/streamcode9/software-design/blob/master/README.md)
 
 ---
