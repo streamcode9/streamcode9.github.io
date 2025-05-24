@@ -1,4 +1,5 @@
 * bulgakov
+* strugatskie
 * Conan Doyle
 * dostoevski
 * nabokov
