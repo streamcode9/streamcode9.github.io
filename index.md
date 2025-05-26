@@ -31,15 +31,8 @@ Earth
 
 Universe and Everything
 * [Science](/2024/01/02/science.html)
-* Culture
-  * [Music](/2024/07/02/music.html)
-    * [Music theory](/2024/11/05/music-theory.html)
-    * [Ukulele](/2024/07/12/ukulele.html)
-  * [Art](/2024/07/03/art.html)
-    * [Origami](/2024/07/01/origami.html)
-    * [Games](/2024/01/01/games.html)
-    * [Cinema](/2024/01/05/cinema.html)
-  * [Literature](/2024/06/30/literature.html) 
+* [Ukulele](/2024/07/12/ukulele.html)
+* [Origami](/2024/07/01/origami.html)
 
 ---
 
