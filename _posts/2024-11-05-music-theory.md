@@ -92,3 +92,6 @@ title: Music theory
     * эолийский = натуральный минор
     * фригийский = понижается 2
     * лакрийский = понижается 2, 5
+
+### Rythm
+* Practice different rythm in different hands 
