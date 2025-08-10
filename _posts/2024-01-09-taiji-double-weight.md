@@ -1,5 +1,6 @@
 ---
-categories: [taiji-double-weight]
+categories: [martial-arts]
+tags: [taiji-double-weight]
 ---
 
 The **"double weight" (雙重, shuāng zhòng) or "double weighted"** principle in Taijiquan (Tai Chi Chuan) is a concept often mentioned in classical Taiji theory but widely misunderstood. The phrase appears in texts like the *Taijiquan Classics*, which state:  

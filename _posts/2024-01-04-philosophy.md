@@ -1,5 +1,6 @@
 ---
 categories: [philosophy]
+tags: [philosophy]
 ---
 
 * Escapism

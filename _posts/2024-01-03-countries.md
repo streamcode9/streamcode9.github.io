@@ -1,5 +1,6 @@
 ---
-categories: [countries]
+categories: [geography]
+tags: [countries]
 ---
 
 * norway

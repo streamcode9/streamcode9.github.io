@@ -1,5 +1,6 @@
 ---
-categories: [organizing-knowledge]
+categories: [productivity]
+tags: [organizing-knowledge]
 ---
 
 

@@ -1,5 +1,6 @@
 ---
-categories: [taijiquan-40-levels]
+categories: [martial-arts]
+tags: [taijiquan]
 ---
 
 Here’s a **structured 40-level self-training routine** for progressing
