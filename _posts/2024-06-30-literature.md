@@ -1,3 +1,7 @@
+---
+categories: [literature]
+---
+
 * bulgakov
 * strugatskie
 * Conan Doyle
