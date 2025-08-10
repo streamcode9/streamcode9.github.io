@@ -1,5 +1,6 @@
 ---
 categories: [literature]
+tags: [literature]
 ---
 
 * bulgakov

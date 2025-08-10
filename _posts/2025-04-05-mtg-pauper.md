@@ -1,5 +1,6 @@
 ---
-categories: [mtg-pauper]
+categories: [games]
+tags: [mtg-pauper]
 ---
 
 The idea behind **Pauper** is simple but brilliant:  

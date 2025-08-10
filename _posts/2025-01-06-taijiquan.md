@@ -1,5 +1,6 @@
 ---
-categories: [taijiquan]
+categories: [martial-arts]
+tags: [taijiquan]
 ---
 
 ## Term
