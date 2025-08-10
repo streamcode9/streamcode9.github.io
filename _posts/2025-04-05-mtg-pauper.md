@@ -1,3 +1,7 @@
+---
+categories: [mtg-pauper]
+---
+
 The idea behind **Pauper** is simple but brilliant:  
 **"Only common cards allowed."**
 

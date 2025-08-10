@@ -1,5 +1,6 @@
 ---
 title: Music theory
+categories: [music-theory]
 ---
 
 ## Music theory

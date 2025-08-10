@@ -37,3 +37,4 @@ Universe and Everything
 
 Misc
 * [Latest posts](/pages/blog)
+* [Categories](/pages/categories)

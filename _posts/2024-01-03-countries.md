@@ -1,3 +1,7 @@
+---
+categories: [countries]
+---
+
 * norway
 * danmark
 * sweeden

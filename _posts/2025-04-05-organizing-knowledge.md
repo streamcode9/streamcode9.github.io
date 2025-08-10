@@ -1,3 +1,7 @@
+---
+categories: [organizing-knowledge]
+---
+
 
 ---
 

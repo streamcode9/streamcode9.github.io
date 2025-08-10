@@ -1,3 +1,7 @@
+---
+categories: [taijiquan-40-levels]
+---
+
 Here’s a **structured 40-level self-training routine** for progressing
 from complete beginner to a **Chen-style Taijiquan master**.
 The path is divided into **five phases** (8 levels each),
