@@ -13,6 +13,7 @@ tags: [countries]
 * åland
 * italy - sicilia
 * japan - jiro
+* frankrike - remi
 * nepal - chomolunga
 * china - shaolin
 * south korea
