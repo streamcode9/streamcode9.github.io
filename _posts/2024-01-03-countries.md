@@ -17,6 +17,6 @@ tags: [countries]
 * nepal - chomolunga
 * china - shaolin
 * south korea
-* austria
+* austria - music
 * switzerland
 * lihtenstein
