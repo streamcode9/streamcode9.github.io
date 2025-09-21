@@ -1,34 +1,48 @@
-name: Build WebAssembly Hello World
+# .github/workflows/pages.yml
+name: Build & Deploy GitHub Pages (with WASM)
 
 on:
   push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Emscripten SDK
-        uses: mymindstorm/setup-emsdk@v12
+      - uses: mymindstorm/setup-emsdk@v12
         with:
           version: 3.1.50
 
-      - name: Compile C89 hello world to WebAssembly
+      - name: Build wasm
         run: |
-          emcc \
-            -std=c89 \
-            -s STANDALONE_WASM=1 \
-            wasm/hello.c \
-            -o wasm/hello.wasm
+          emcc -std=c89 -s STANDALONE_WASM=1 wasm/hello.c -o wasm/hello.wasm
 
-      - name: Upload WebAssembly artifact
-        uses: actions/upload-artifact@v4
+      # If you use Jekyll, build here; otherwise just ship the repo contents.
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: hello-wasm
-          path: wasm/hello.wasm
+          path: .  # ships your whole site, including wasm/hello.wasm
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
