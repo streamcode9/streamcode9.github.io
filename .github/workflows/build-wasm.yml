@@ -1,0 +1,38 @@
+name: Build WebAssembly Hello World
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Download wasi-sdk
+        run: |
+          WASI_VERSION=20.0
+          WASI_RELEASE="wasi-sdk-${WASI_VERSION}"
+          WASI_PACKAGE="${WASI_RELEASE}-linux.tar.gz"
+          curl -L "https://github.com/WebAssembly/wasi-sdk/releases/download/${WASI_RELEASE}/${WASI_PACKAGE}" -o wasi-sdk.tar.gz
+          tar -xzf wasi-sdk.tar.gz
+          mv "${WASI_RELEASE}" wasi-sdk
+
+      - name: Compile C89 hello world to WebAssembly
+        run: |
+          ./wasi-sdk/bin/clang \
+            --sysroot=./wasi-sdk/share/wasi-sysroot \
+            -std=c89 \
+            wasm/hello.c \
+            -o wasm/hello.wasm
+
+      - name: Upload WebAssembly artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: hello-wasm
+          path: wasm/hello.wasm
