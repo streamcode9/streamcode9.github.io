@@ -36,5 +36,6 @@ Universe and Everything
 ---
 
 Misc
+* [Hello World](/hello-world/)
 * [Latest posts](/pages/blog)
 * [Categories](/pages/categories)
