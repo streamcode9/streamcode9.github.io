@@ -16,12 +16,13 @@ jobs:
 
       - name: Download wasi-sdk
         run: |
-          WASI_VERSION=20.0
-          WASI_RELEASE="wasi-sdk-${WASI_VERSION}"
-          WASI_PACKAGE="${WASI_RELEASE}-linux.tar.xz"
-          curl -L "https://github.com/WebAssembly/wasi-sdk/releases/download/${WASI_RELEASE}/${WASI_PACKAGE}" -o wasi-sdk.tar.xz
-          tar -xJf wasi-sdk.tar.xz
-          mv "${WASI_RELEASE}" wasi-sdk
+          WASI_TAG_VERSION=20
+          WASI_ASSET_VERSION="${WASI_TAG_VERSION}.0"
+          WASI_RELEASE="wasi-sdk-${WASI_TAG_VERSION}"
+          WASI_PACKAGE="wasi-sdk-${WASI_ASSET_VERSION}-linux.tar.gz"
+          curl -L "https://github.com/WebAssembly/wasi-sdk/releases/download/${WASI_RELEASE}/${WASI_PACKAGE}" -o wasi-sdk.tar.gz
+          tar -xzf wasi-sdk.tar.gz
+          mv "wasi-sdk-${WASI_ASSET_VERSION}" wasi-sdk
 
       - name: Compile C89 hello world to WebAssembly
         run: |
