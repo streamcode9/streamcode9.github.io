@@ -14,21 +14,16 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Download wasi-sdk
-        run: |
-          WASI_TAG_VERSION=20
-          WASI_ASSET_VERSION="${WASI_TAG_VERSION}.0"
-          WASI_RELEASE="wasi-sdk-${WASI_TAG_VERSION}"
-          WASI_PACKAGE="wasi-sdk-${WASI_ASSET_VERSION}-linux.tar.gz"
-          curl -L "https://github.com/WebAssembly/wasi-sdk/releases/download/${WASI_RELEASE}/${WASI_PACKAGE}" -o wasi-sdk.tar.gz
-          tar -xzf wasi-sdk.tar.gz
-          mv "wasi-sdk-${WASI_ASSET_VERSION}" wasi-sdk
+      - name: Set up Emscripten SDK
+        uses: mymindstorm/setup-emsdk@v12
+        with:
+          version: 3.1.50
 
       - name: Compile C89 hello world to WebAssembly
         run: |
-          ./wasi-sdk/bin/clang \
-            --sysroot=./wasi-sdk/share/wasi-sysroot \
+          emcc \
             -std=c89 \
+            -s STANDALONE_WASM=1 \
             wasm/hello.c \
             -o wasm/hello.wasm
 
