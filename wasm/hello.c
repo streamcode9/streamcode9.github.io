@@ -1,7 +1,16 @@
-#include <stdio.h>
+#include <stddef.h>
+#include <emscripten/emscripten.h>
 
-int main(void)
+static const char GREETING[] = "Hello from WebAssembly!";
+
+EMSCRIPTEN_KEEPALIVE
+const char *get_greeting(void)
 {
-    printf("Hello, world!\n");
-    return 0;
+    return GREETING;
+}
+
+EMSCRIPTEN_KEEPALIVE
+size_t get_greeting_length(void)
+{
+    return sizeof(GREETING) - 1;
 }
