@@ -15,3 +15,56 @@ permalink: /dummy/
     <p>"Sometimes you just need a blank canvas before the masterpiece arrives."</p>
   </blockquote>
 </section>
+
+<section class="dummy-page">
+  <h2>WebAssembly Greeting Demo</h2>
+  <p>
+    The button below loads <code>wasm/hello.wasm</code>—a module compiled from <code>hello.c</code>—
+    and calls the exported <code>get_greeting</code> function to display its message.
+  </p>
+  <button type="button" id="load-wasm">Load greeting from WebAssembly</button>
+  <pre id="wasm-result" aria-live="polite">Click the button to fetch the WebAssembly module.</pre>
+</section>
+
+<script type="module">
+const wasmUrl = "{{ '/wasm/hello.wasm' | relative_url }}";
+const loadButton = document.getElementById('load-wasm');
+const output = document.getElementById('wasm-result');
+
+async function loadGreetingFromWasm() {
+  output.textContent = 'Loading greeting...';
+
+  try {
+    const response = await fetch(wasmUrl);
+    if (!response.ok) {
+      throw new Error(`Unexpected response: ${response.status} ${response.statusText}`);
+    }
+
+    const buffer = await response.arrayBuffer();
+    const { instance } = await WebAssembly.instantiate(buffer, {});
+    const { exports } = instance;
+
+    if (typeof exports.get_greeting !== 'function' || typeof exports.get_greeting_length !== 'function') {
+      throw new Error('Expected WebAssembly exports were not found.');
+    }
+
+    const pointer = exports.get_greeting();
+    const length = exports.get_greeting_length();
+    const memory = exports.memory;
+
+    if (!(memory instanceof WebAssembly.Memory)) {
+      throw new Error('WebAssembly memory export is missing.');
+    }
+
+    const bytes = new Uint8Array(memory.buffer, pointer, length);
+    const greeting = new TextDecoder('utf-8').decode(bytes);
+
+    output.textContent = greeting;
+  } catch (error) {
+    console.error('Failed to load WebAssembly module:', error);
+    output.textContent = `Failed to load greeting: ${error.message}`;
+  }
+}
+
+loadButton.addEventListener('click', loadGreetingFromWasm);
+</script>
