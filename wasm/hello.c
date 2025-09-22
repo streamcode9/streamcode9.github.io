@@ -14,8 +14,3 @@ size_t get_greeting_length(void)
 {
     return sizeof(GREETING) - 1;
 }
-
-int main(void)
-{
-    return 0;
-}

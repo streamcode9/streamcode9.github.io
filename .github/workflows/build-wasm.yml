@@ -27,7 +27,7 @@ jobs:
 
       - name: Build wasm
         run: |
-          emcc -std=c89 -s STANDALONE_WASM=1 wasm/hello.c -o wasm/hello.wasm
+          emcc -std=c89 --no-entry -s STANDALONE_WASM=1 wasm/hello.c -o wasm/hello.wasm
 
       # If you use Jekyll, build here; otherwise just ship the repo contents.
       - name: Configure Pages
