@@ -9,10 +9,6 @@ const loadButton = document.getElementById('load-wasm');
 const output = document.getElementById('wasm-result');
 const utf8 = new TextDecoder();
 
-if (!loadButton || !output) {
-  console.error('Missing #load-wasm button or #wasm-result element in the DOM.');
-}
-
 async function instantiateWasm(url, imports = {}) {
   // Try streaming first (faster if server sets application/wasm)
   try {
