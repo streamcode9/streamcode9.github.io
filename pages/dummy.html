@@ -10,7 +10,6 @@ const output = document.getElementById('wasm-result');
 const utf8 = new TextDecoder();
 
 async function instantiateWasm(url, imports = {}) {
-  // Try streaming first (faster if server sets application/wasm)
   try {
     const res = await fetch(url);
     if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
