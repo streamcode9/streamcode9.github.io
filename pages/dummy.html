@@ -12,8 +12,6 @@ const utf8 = new TextDecoder();
 async function instantiateWasm(url, imports = {}) {
   try {
     const res = await fetch(url);
-    if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
-    
     return await WebAssembly.instantiateStreaming(res, imports);
   } catch (e) {
     throw new Error(`Failed to fetch/instantiate WASM: ${e.message}`);
