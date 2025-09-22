@@ -8,12 +8,8 @@ const output = document.getElementById('wasm-result');
 const utf8 = new TextDecoder();
 
 async function instantiateWasm(url, imports = {}) {
-  try {
-    const res = await fetch(url);
-    return await WebAssembly.instantiateStreaming(res, imports);
-  } catch (e) {
-    throw new Error(`Failed to fetch/instantiate WASM: ${e.message}`);
-  }
+  const res = await fetch(url);
+  return await WebAssembly.instantiateStreaming(res, imports);
 }
 
 async function loadGreetingFromWasm() {
