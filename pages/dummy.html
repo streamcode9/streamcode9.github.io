@@ -27,77 +27,69 @@ permalink: /dummy/
 </section>
 
 <script type="module">
-const wasmUrl = '/wasm/hello.wasm';
+const wasmPath = 'wasm/hello.wasm'; // relative (works on GitHub Pages subpaths)
 const loadButton = document.getElementById('load-wasm');
 const output = document.getElementById('wasm-result');
-const utf8Decoder = new TextDecoder('utf-8');
+const utf8 = new TextDecoder();
 
-function createWasiImports() {
-  const noop = () => 0;
+if (!loadButton || !output) {
+  console.error('Missing #load-wasm button or #wasm-result element in the DOM.');
+}
 
-  return {
-    wasi_snapshot_preview1: {
-      proc_exit(code) {
-        if (code !== 0) {
-          throw new Error(`WebAssembly module exited with code ${code}`);
-        }
-      },
-      fd_close: noop,
-      fd_fdstat_get: noop,
-      fd_seek: noop,
-      fd_write: noop,
-      environ_get: noop,
-      environ_sizes_get: noop,
-      args_get: noop,
-      args_sizes_get: noop,
-      clock_time_get: noop,
-      random_get: noop,
-    },
-  };
+async function instantiateWasm(url, imports = {}) {
+  // Try streaming first (faster if server sets application/wasm)
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+    try {
+      return await WebAssembly.instantiateStreaming(res, imports);
+    } catch {
+      // Fallback if wrong MIME
+      const bytes = await res.arrayBuffer();
+      return await WebAssembly.instantiate(bytes, imports);
+    }
+  } catch (e) {
+    throw new Error(`Failed to fetch/instantiate WASM: ${e.message}`);
+  }
 }
 
 async function loadGreetingFromWasm() {
-  output.textContent = 'Loading greeting...';
+  if (output) output.textContent = 'Loading greeting...';
 
   try {
-    const response = await fetch(wasmUrl);
-    if (!response.ok) {
-      throw new Error(`Unexpected response: ${response.status} ${response.statusText}`);
-    }
-
-    const buffer = await response.arrayBuffer();
-    const imports = createWasiImports();
-    const { instance } = await WebAssembly.instantiate(buffer, imports);
+    // No imports needed for your module, but keep an empty object for clarity
+    const { instance } = await instantiateWasm(new URL(wasmPath, document.baseURI));
     const { exports } = instance;
 
     const getGreeting = exports.get_greeting || exports._get_greeting;
     const getGreetingLength = exports.get_greeting_length || exports._get_greeting_length;
 
     if (typeof getGreeting !== 'function' || typeof getGreetingLength !== 'function') {
-      throw new Error('Expected WebAssembly exports were not found.');
+      throw new Error('Expected WebAssembly exports "get_greeting" and "get_greeting_length" not found.');
     }
 
+    // Some toolchains expose an optional initializer (not needed here, but harmless)
     if (typeof exports._initialize === 'function') {
       exports._initialize();
     }
 
     const memory = exports.memory;
-
     if (!(memory instanceof WebAssembly.Memory)) {
       throw new Error('WebAssembly memory export is missing.');
     }
 
-    const pointer = getGreeting();
-    const length = getGreetingLength();
-    const bytes = new Uint8Array(memory.buffer, pointer, length);
-    const greeting = utf8Decoder.decode(bytes);
+    const ptr = getGreeting();
+    const len = getGreetingLength();
 
-    output.textContent = greeting;
+    const bytes = new Uint8Array(memory.buffer, ptr, len);
+    const greeting = utf8.decode(bytes);
+
+    if (output) output.textContent = greeting;
   } catch (error) {
-    console.error('Failed to load WebAssembly module:', error);
-    output.textContent = `Failed to load greeting: ${error.message}`;
+    console.error(error);
+    if (output) output.textContent = `Failed to load greeting: ${error.message}`;
   }
 }
 
-loadButton.addEventListener('click', loadGreetingFromWasm);
+loadButton?.addEventListener('click', loadGreetingFromWasm);
 </script>
