@@ -26,6 +26,7 @@ async function instantiateWasm(url, imports = {}) {
     try {
       return await WebAssembly.instantiateStreaming(res, imports);
     } catch {
+      alert('fallback');
       // Fallback if wrong MIME
       const bytes = await res.arrayBuffer();
       return await WebAssembly.instantiate(bytes, imports);
