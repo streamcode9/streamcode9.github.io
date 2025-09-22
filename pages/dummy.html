@@ -30,6 +30,31 @@ permalink: /dummy/
 const wasmUrl = '/wasm/hello.wasm';
 const loadButton = document.getElementById('load-wasm');
 const output = document.getElementById('wasm-result');
+const utf8Decoder = new TextDecoder('utf-8');
+
+function createWasiImports() {
+  const noop = () => 0;
+
+  return {
+    wasi_snapshot_preview1: {
+      proc_exit(code) {
+        if (code !== 0) {
+          throw new Error(`WebAssembly module exited with code ${code}`);
+        }
+      },
+      fd_close: noop,
+      fd_fdstat_get: noop,
+      fd_seek: noop,
+      fd_write: noop,
+      environ_get: noop,
+      environ_sizes_get: noop,
+      args_get: noop,
+      args_sizes_get: noop,
+      clock_time_get: noop,
+      random_get: noop,
+    },
+  };
+}
 
 async function loadGreetingFromWasm() {
   output.textContent = 'Loading greeting...';
@@ -41,23 +66,31 @@ async function loadGreetingFromWasm() {
     }
 
     const buffer = await response.arrayBuffer();
-    const { instance } = await WebAssembly.instantiate(buffer, {});
+    const imports = createWasiImports();
+    const { instance } = await WebAssembly.instantiate(buffer, imports);
     const { exports } = instance;
 
-    if (typeof exports.get_greeting !== 'function' || typeof exports.get_greeting_length !== 'function') {
+    const getGreeting = exports.get_greeting || exports._get_greeting;
+    const getGreetingLength = exports.get_greeting_length || exports._get_greeting_length;
+
+    if (typeof getGreeting !== 'function' || typeof getGreetingLength !== 'function') {
       throw new Error('Expected WebAssembly exports were not found.');
     }
 
-    const pointer = exports.get_greeting();
-    const length = exports.get_greeting_length();
+    if (typeof exports._initialize === 'function') {
+      exports._initialize();
+    }
+
     const memory = exports.memory;
 
     if (!(memory instanceof WebAssembly.Memory)) {
       throw new Error('WebAssembly memory export is missing.');
     }
 
+    const pointer = getGreeting();
+    const length = getGreetingLength();
     const bytes = new Uint8Array(memory.buffer, pointer, length);
-    const greeting = new TextDecoder('utf-8').decode(bytes);
+    const greeting = utf8Decoder.decode(bytes);
 
     output.textContent = greeting;
   } catch (error) {
