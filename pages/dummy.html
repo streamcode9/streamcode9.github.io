@@ -16,7 +16,6 @@ async function loadGreetingFromWasm() {
   if (output) output.textContent = 'Loading greeting...';
 
   try {
-    // No imports needed for your module, but keep an empty object for clarity
     const { instance } = await instantiateWasm(new URL(wasmPath, document.baseURI));
     const { exports } = instance;
 
