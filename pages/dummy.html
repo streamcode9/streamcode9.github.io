@@ -7,46 +7,18 @@ const loadButton = document.getElementById('load-wasm');
 const output = document.getElementById('wasm-result');
 const utf8 = new TextDecoder();
 
-async function instantiateWasm(url, imports = {}) {
-  const res = await fetch(url);
-  return await WebAssembly.instantiateStreaming(res, imports);
-}
-
 async function loadGreetingFromWasm() {
-  if (output) output.textContent = 'Loading greeting...';
+  output.textContent = 'Loading greeting...';
 
-  try {
-    const { instance } = await instantiateWasm(new URL(wasmPath, document.baseURI));
-    const { exports } = instance;
+  const res = await fetch(new URL(wasmPath, document.baseURI));  
+  const { instance: { exports } } = await WebAssembly.instantiateStreaming(res, {});
+  if (typeof exports._initialize === 'function') exports._initialize();
+  
+  const ptr = exports.get_greeting();
+  const len = exports.get_greeting_length();
+  const bytes = new Uint8Array(exports.memory.buffer, ptr, len);
 
-    const getGreeting = exports.get_greeting || exports._get_greeting;
-    const getGreetingLength = exports.get_greeting_length || exports._get_greeting_length;
-
-    if (typeof getGreeting !== 'function' || typeof getGreetingLength !== 'function') {
-      throw new Error('Expected WebAssembly exports "get_greeting" and "get_greeting_length" not found.');
-    }
-
-    // Some toolchains expose an optional initializer (not needed here, but harmless)
-    if (typeof exports._initialize === 'function') {
-      exports._initialize();
-    }
-
-    const memory = exports.memory;
-    if (!(memory instanceof WebAssembly.Memory)) {
-      throw new Error('WebAssembly memory export is missing.');
-    }
-
-    const ptr = getGreeting();
-    const len = getGreetingLength();
-
-    const bytes = new Uint8Array(memory.buffer, ptr, len);
-    const greeting = utf8.decode(bytes);
-
-    if (output) output.textContent = greeting;
-  } catch (error) {
-    console.error(error);
-    if (output) output.textContent = `Failed to load greeting: ${error.message}`;
-  }
+  output.textContent = utf8.decode(bytes);
 }
 
 loadButton?.addEventListener('click', loadGreetingFromWasm);
