@@ -37,12 +37,29 @@
         height: 100%;
         display: block;
       }
+
+      #fps-counter {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        background: rgba(15, 23, 42, 0.75);
+        color: #facc15;
+        font-weight: 600;
+        font-size: 0.875rem;
+        letter-spacing: 0.02em;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(6px);
+        pointer-events: none;
+      }
     </style>
   </head>
   <body>
     <h1>WebAssembly Bouncing Ball Demo</h1>
     <p>The ball is simulated inside WebAssembly and rendered on an HTML canvas.</p>
     <canvas id="game-canvas"></canvas>
+    <div id="fps-counter" role="status" aria-live="polite">-- FPS</div>
     <script type="module" src="game.js"></script>
   </body>
 </html>

@@ -1,7 +1,10 @@
 const canvas = document.getElementById('game-canvas');
 const context = canvas.getContext('2d');
+const fpsDisplay = document.getElementById('fps-counter');
 let wasmExports = null;
 let lastTime = null;
+let fpsFrameCount = 0;
+let fpsLastTimestamp = 0;
 
 function resizeCanvas() {
   canvas.width = window.innerWidth;
@@ -34,6 +37,7 @@ function drawFrame() {
 function updateAndRender(timestamp) {
   if (!lastTime) {
     lastTime = timestamp;
+    fpsLastTimestamp = timestamp;
   }
 
   const deltaSeconds = (timestamp - lastTime) / 1000;
@@ -41,6 +45,17 @@ function updateAndRender(timestamp) {
 
   wasmExports.update(deltaSeconds);
   drawFrame();
+
+  fpsFrameCount += 1;
+  const fpsElapsed = timestamp - fpsLastTimestamp;
+  if (fpsElapsed >= 250) {
+    const fps = Math.round((fpsFrameCount * 1000) / fpsElapsed);
+    if (fpsDisplay) {
+      fpsDisplay.textContent = `${fps} FPS`;
+    }
+    fpsFrameCount = 0;
+    fpsLastTimestamp = timestamp;
+  }
 
   requestAnimationFrame(updateAndRender);
 }
