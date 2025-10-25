@@ -1,0 +1,98 @@
+:root {
+  color-scheme: light dark;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+body {
+  margin: 0;
+  background: var(--page-background, #fdfdfd);
+  color: var(--page-text, #222);
+}
+
+a {
+  color: #0a4fb8;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+.site-header {
+  background: rgba(10, 79, 184, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+#posts-status {
+  font-style: italic;
+}
+
+#posts-list {
+  list-style: none;
+  padding: 0;
+}
+
+#posts-list li {
+  margin: 0.5rem 0;
+}
+
+#categories section {
+  margin-bottom: 2rem;
+}
+
+#categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+#categories li {
+  margin: 0.25rem 0;
+}
+
+.post-categories,
+.post-tags {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.post-categories li,
+.post-tags li {
+  background: rgba(10, 79, 184, 0.1);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+#posts-list .post-meta {
+  color: #555;
+  font-size: 0.875rem;
+}
+
+#post-body pre {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.site-footer {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

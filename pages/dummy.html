@@ -1,25 +1,50 @@
-<button type="button" id="load-wasm">Load greeting from WebAssembly</button>
-<pre id="wasm-result" aria-live="polite">Click the button to fetch the WebAssembly module.</pre>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WASM Demo · Streamcode9</title>
+  <link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/pages/blog.html">Blog</a>
+      <a href="/pages/categories.html">Categories</a>
+      <a href="/pages/dummy.html" aria-current="page">WASM Demo</a>
+    </nav>
+  </header>
+  <main>
+    <h1>WebAssembly Greeting</h1>
+    <p>Click the button to load a greeting from the WebAssembly module.</p>
+    <button type="button" id="load-wasm">Load greeting from WebAssembly</button>
+    <pre id="wasm-result" aria-live="polite">Click the button to fetch the WebAssembly module.</pre>
+  </main>
+  <footer class="site-footer">
+    <small>&copy; 2025 Streamcode9</small>
+  </footer>
+  <script type="module">
+    const wasmPath = '/wasm/hello.wasm';
+    const loadButton = document.getElementById('load-wasm');
+    const output = document.getElementById('wasm-result');
+    const utf8 = new TextDecoder();
 
-<script type="module">
-const wasmPath = '/wasm/hello.wasm'; // relative (works on GitHub Pages subpaths)
-const loadButton = document.getElementById('load-wasm');
-const output = document.getElementById('wasm-result');
-const utf8 = new TextDecoder();
+    async function loadGreetingFromWasm() {
+      output.textContent = 'Loading greeting...';
 
-async function loadGreetingFromWasm() {
-  output.textContent = 'Loading greeting...';
+      const res = await fetch(new URL(wasmPath, document.baseURI));
+      const { instance: { exports } } = await WebAssembly.instantiateStreaming(res, {});
+      if (typeof exports._initialize === 'function') exports._initialize();
 
-  const res = await fetch(new URL(wasmPath, document.baseURI));  
-  const { instance: { exports } } = await WebAssembly.instantiateStreaming(res, {});
-  if (typeof exports._initialize === 'function') exports._initialize();
-  
-  const ptr = exports.get_greeting();
-  const len = exports.get_greeting_length();
-  const bytes = new Uint8Array(exports.memory.buffer, ptr, len);
+      const ptr = exports.get_greeting();
+      const len = exports.get_greeting_length();
+      const bytes = new Uint8Array(exports.memory.buffer, ptr, len);
 
-  output.textContent = utf8.decode(bytes);
-}
+      output.textContent = utf8.decode(bytes);
+    }
 
-loadButton?.addEventListener('click', loadGreetingFromWasm);
-</script>
+    loadButton?.addEventListener('click', loadGreetingFromWasm);
+  </script>
+</body>
+</html>
