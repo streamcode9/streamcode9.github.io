@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Streamcode9 Blog</title>
+  <subtitle>Personal blog covering music, mathematics, games, science, philosophy, and more.</subtitle>
+  <link href="https://streamcode9.github.io/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://streamcode9.github.io/" rel="alternate" type="text/html" />
+  <id>https://streamcode9.github.io/</id>
+  <updated>2025-12-12T15:18:06Z</updated>
+  <author>
+    <name>Streamcode9</name>
+    <uri>https://streamcode9.github.io</uri>
+  </author>
+  <entry>
+    <title>Math Countries</title>
+    <link href="https://streamcode9.github.io/2025/08/28/math-countries.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2025/08/28/math-countries.html</id>
+    <published>2025-08-28T00:00:00Z</published>
+    <updated>2025-08-28T00:00:00Z</updated>
+    <summary type="text">Mathematics across different countries.</summary>
+  </entry>
+  <entry>
+    <title>Sushi</title>
+    <link href="https://streamcode9.github.io/2025/08/25/sushi.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2025/08/25/sushi.html</id>
+    <published>2025-08-25T00:00:00Z</published>
+    <updated>2025-08-25T00:00:00Z</updated>
+    <summary type="text">Notes and thoughts about sushi.</summary>
+  </entry>
+  <entry>
+    <title>Mltt 72</title>
+    <link href="https://streamcode9.github.io/2025/04/05/mltt-72.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2025/04/05/mltt-72.html</id>
+    <published>2025-04-05T00:00:00Z</published>
+    <updated>2025-04-05T00:00:00Z</updated>
+    <summary type="text">Notes on Martin-Löf Type Theory 1972.</summary>
+  </entry>
+  <entry>
+    <title>Mtg Pauper</title>
+    <link href="https://streamcode9.github.io/2025/04/05/mtg-pauper.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2025/04/05/mtg-pauper.html</id>
+    <published>2025-04-05T00:00:00Z</published>
+    <updated>2025-04-05T00:00:00Z</updated>
+    <summary type="text">Notes on Magic: The Gathering Pauper format.</summary>
+  </entry>
+  <entry>
+    <title>Organizing Knowledge</title>
+    <link href="https://streamcode9.github.io/2025/04/05/organizing-knowledge.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2025/04/05/organizing-knowledge.html</id>
+    <published>2025-04-05T00:00:00Z</published>
+    <updated>2025-04-05T00:00:00Z</updated>
+    <summary type="text">Thoughts on organizing and managing knowledge.</summary>
+  </entry>
+  <entry>
+    <title>Chen</title>
+    <link href="https://streamcode9.github.io/2025/04/04/chen.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2025/04/04/chen.html</id>
+    <published>2025-04-04T00:00:00Z</published>
+    <updated>2025-04-04T00:00:00Z</updated>
+    <summary type="text">Notes on Chen style Taijiquan.</summary>
+  </entry>
+  <entry>
+    <title>Hus</title>
+    <link href="https://streamcode9.github.io/2025/01/28/hus.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2025/01/28/hus.html</id>
+    <published>2025-01-28T00:00:00Z</published>
+    <updated>2025-01-28T00:00:00Z</updated>
+    <summary type="text">Notes about house and family matters.</summary>
+  </entry>
+  <entry>
+    <title>Taijiquan</title>
+    <link href="https://streamcode9.github.io/2025/01/06/taijiquan.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2025/01/06/taijiquan.html</id>
+    <published>2025-01-06T00:00:00Z</published>
+    <updated>2025-01-06T00:00:00Z</updated>
+    <summary type="text">Notes on Taijiquan, ancient Chinese martial art.</summary>
+  </entry>
+  <entry>
+    <title>Taijiquan 40 Levels</title>
+    <link href="https://streamcode9.github.io/2025/01/05/taijiquan-40-levels.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2025/01/05/taijiquan-40-levels.html</id>
+    <published>2025-01-05T00:00:00Z</published>
+    <updated>2025-01-05T00:00:00Z</updated>
+    <summary type="text">The 40 levels of Taijiquan mastery.</summary>
+  </entry>
+  <entry>
+    <title>Music theory</title>
+    <link href="https://streamcode9.github.io/2024/11/05/music-theory.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/11/05/music-theory.html</id>
+    <published>2024-11-05T00:00:00Z</published>
+    <updated>2024-11-05T00:00:00Z</updated>
+    <summary type="text">Notes on music theory fundamentals.</summary>
+  </entry>
+  <entry>
+    <title>Zemfira</title>
+    <link href="https://streamcode9.github.io/2024/11/04/zemfira.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/11/04/zemfira.html</id>
+    <published>2024-11-04T00:00:00Z</published>
+    <updated>2024-11-04T00:00:00Z</updated>
+    <summary type="text">Notes about Zemfira, Russian rock musician.</summary>
+  </entry>
+  <entry>
+    <title>Ukulele 2</title>
+    <link href="https://streamcode9.github.io/2024/07/12/ukulele-2.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/07/12/ukulele-2.html</id>
+    <published>2024-07-12T00:00:00Z</published>
+    <updated>2024-07-12T00:00:00Z</updated>
+    <summary type="text">Ukulele self-study program: The Roy Smeck Method.</summary>
+  </entry>
+  <entry>
+    <title>Ukulele</title>
+    <link href="https://streamcode9.github.io/2024/07/12/ukulele.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/07/12/ukulele.html</id>
+    <published>2024-07-12T00:00:00Z</published>
+    <updated>2024-07-12T00:00:00Z</updated>
+    <summary type="text">Notes on ukulele playing and learning.</summary>
+  </entry>
+  <entry>
+    <title>Health</title>
+    <link href="https://streamcode9.github.io/2024/07/11/health.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/07/11/health.html</id>
+    <published>2024-07-11T00:00:00Z</published>
+    <updated>2024-07-11T00:00:00Z</updated>
+    <summary type="text">Notes and thoughts about health.</summary>
+  </entry>
+  <entry>
+    <title>Bike</title>
+    <link href="https://streamcode9.github.io/2024/07/05/bike.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/07/05/bike.html</id>
+    <published>2024-07-05T00:00:00Z</published>
+    <updated>2024-07-05T00:00:00Z</updated>
+    <summary type="text">Notes and thoughts about biking.</summary>
+  </entry>
+  <entry>
+    <title>Anime</title>
+    <link href="https://streamcode9.github.io/2024/07/04/anime.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/07/04/anime.html</id>
+    <published>2024-07-04T00:00:00Z</published>
+    <updated>2024-07-04T00:00:00Z</updated>
+    <summary type="text">Notes and thoughts about anime.</summary>
+  </entry>
+  <entry>
+    <title>Art</title>
+    <link href="https://streamcode9.github.io/2024/07/03/art.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/07/03/art.html</id>
+    <published>2024-07-03T00:00:00Z</published>
+    <updated>2024-07-03T00:00:00Z</updated>
+    <summary type="text">Notes and thoughts about art.</summary>
+  </entry>
+  <entry>
+    <title>Music</title>
+    <link href="https://streamcode9.github.io/2024/07/02/music.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/07/02/music.html</id>
+    <published>2024-07-02T00:00:00Z</published>
+    <updated>2024-07-02T00:00:00Z</updated>
+    <summary type="text">Notes and thoughts about music.</summary>
+  </entry>
+  <entry>
+    <title>Origami</title>
+    <link href="https://streamcode9.github.io/2024/07/01/origami.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/07/01/origami.html</id>
+    <published>2024-07-01T00:00:00Z</published>
+    <updated>2024-07-01T00:00:00Z</updated>
+    <summary type="text">Notes and thoughts about origami.</summary>
+  </entry>
+  <entry>
+    <title>Literature</title>
+    <link href="https://streamcode9.github.io/2024/06/30/literature.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/06/30/literature.html</id>
+    <published>2024-06-30T00:00:00Z</published>
+    <updated>2024-06-30T00:00:00Z</updated>
+    <summary type="text">Notes and thoughts about literature.</summary>
+  </entry>
+  <entry>
+    <title>Taiji Double Weight</title>
+    <link href="https://streamcode9.github.io/2024/01/09/taiji-double-weight.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/01/09/taiji-double-weight.html</id>
+    <published>2024-01-09T00:00:00Z</published>
+    <updated>2024-01-09T00:00:00Z</updated>
+    <summary type="text">Notes on the Taiji double weight concept.</summary>
+  </entry>
+  <entry>
+    <title>Epub Fb2</title>
+    <link href="https://streamcode9.github.io/2024/01/08/epub-fb2.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/01/08/epub-fb2.html</id>
+    <published>2024-01-08T00:00:00Z</published>
+    <updated>2024-01-08T00:00:00Z</updated>
+    <summary type="text">Notes on EPUB and FB2 ebook formats.</summary>
+  </entry>
+  <entry>
+    <title>Ivan Pavlov</title>
+    <link href="https://streamcode9.github.io/2024/01/07/Ivan-Pavlov.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/01/07/Ivan-Pavlov.html</id>
+    <published>2024-01-07T00:00:00Z</published>
+    <updated>2024-01-07T00:00:00Z</updated>
+    <summary type="text">Notes on Ivan Pavlov and his research.</summary>
+  </entry>
+  <entry>
+    <title>Karl Marx</title>
+    <link href="https://streamcode9.github.io/2024/01/06/Karl-Marx.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/01/06/Karl-Marx.html</id>
+    <published>2024-01-06T00:00:00Z</published>
+    <updated>2024-01-06T00:00:00Z</updated>
+    <summary type="text">Notes on Karl Marx and his philosophy.</summary>
+  </entry>
+  <entry>
+    <title>Cinema</title>
+    <link href="https://streamcode9.github.io/2024/01/05/cinema.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/01/05/cinema.html</id>
+    <published>2024-01-05T00:00:00Z</published>
+    <updated>2024-01-05T00:00:00Z</updated>
+    <summary type="text">Notes and thoughts about cinema and films.</summary>
+  </entry>
+  <entry>
+    <title>Philosophy</title>
+    <link href="https://streamcode9.github.io/2024/01/04/philosophy.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/01/04/philosophy.html</id>
+    <published>2024-01-04T00:00:00Z</published>
+    <updated>2024-01-04T00:00:00Z</updated>
+    <summary type="text">Notes and thoughts about philosophy.</summary>
+  </entry>
+  <entry>
+    <title>Countries</title>
+    <link href="https://streamcode9.github.io/2024/01/03/countries.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/01/03/countries.html</id>
+    <published>2024-01-03T00:00:00Z</published>
+    <updated>2024-01-03T00:00:00Z</updated>
+    <summary type="text">Notes and thoughts about countries.</summary>
+  </entry>
+  <entry>
+    <title>Science</title>
+    <link href="https://streamcode9.github.io/2024/01/02/science.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/01/02/science.html</id>
+    <published>2024-01-02T00:00:00Z</published>
+    <updated>2024-01-02T00:00:00Z</updated>
+    <summary type="text">Notes on science, mathematics, and physics.</summary>
+  </entry>
+  <entry>
+    <title>Games</title>
+    <link href="https://streamcode9.github.io/2024/01/01/games.html" rel="alternate" type="text/html" />
+    <id>https://streamcode9.github.io/2024/01/01/games.html</id>
+    <published>2024-01-01T00:00:00Z</published>
+    <updated>2024-01-01T00:00:00Z</updated>
+    <summary type="text">Notes and thoughts about games.</summary>
+  </entry>
+</feed>
