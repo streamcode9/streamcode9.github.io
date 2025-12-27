@@ -65,6 +65,42 @@ main {
   padding: 1.5rem;
 }
 
+section {
+  margin-bottom: 1.5rem;
+}
+
+.category-toggle {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.category-toggle:hover {
+  opacity: 0.7;
+}
+
+.category-toggle[aria-expanded="false"] {
+  transform: rotate(-90deg);
+}
+
+.category-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+  max-height: 1000px;
+}
+
+.category-content.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
 #posts-status {
   font-style: italic;
 }
