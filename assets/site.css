@@ -111,6 +111,42 @@ section {
   transition: max-height 0.3s ease, opacity 0.1s ease 0.1s;
 }
 
+.super-category {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.super-category > h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  display: inline;
+}
+
+.super-toggle {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.sub-category {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.sub-category > h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: inline;
+}
+
+.sub-category h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
 #posts-status {
   font-style: italic;
 }
@@ -187,6 +223,18 @@ section {
 
   .site-footer {
     padding: 1.5rem 1rem;
+  }
+
+  .sub-category {
+    margin-left: 1rem;
+  }
+
+  .super-category > h2 {
+    font-size: 1.5rem;
+  }
+
+  .sub-category > h3 {
+    font-size: 1.2rem;
   }
 }
 
