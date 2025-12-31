@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Todo">
+    <meta name="theme-color" content="#007AFF">
+    <meta name="description" content="Simple Todo List PWA for iOS">
+
+    <title>Todo List</title>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- iOS Icon -->
+    <link rel="apple-touch-icon" href="icons/icon.svg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>Todo List</h1>
+        </header>
+
+        <main class="main">
+            <form class="add-form" id="addForm">
+                <input
+                    type="text"
+                    id="todoInput"
+                    class="todo-input"
+                    placeholder="Add a new task..."
+                    autocomplete="off"
+                    autocorrect="on"
+                >
+                <button type="submit" class="add-btn">+</button>
+            </form>
+
+            <ul class="todo-list" id="todoList">
+                <!-- Todo items will be inserted here -->
+            </ul>
+
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">✓</div>
+                <p>No tasks yet</p>
+                <p class="empty-hint">Add a task above to get started</p>
+            </div>
+        </main>
+
+        <footer class="footer" id="footer">
+            <span id="taskCount">0 tasks</span>
+            <button class="clear-btn" id="clearCompleted">Clear completed</button>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
