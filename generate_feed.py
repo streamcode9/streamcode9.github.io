@@ -11,6 +11,7 @@ BASE_URL = "https://streamcode9.github.io"
 
 # List of blog posts from blog.html (in reverse chronological order)
 POSTS = [
+    ("/2026/01/03/essentials.html", "2026-01-03"),
     ("/2025/08/28/math-countries.html", "2025-08-28"),
     ("/2025/08/25/sushi.html", "2025-08-25"),
     ("/2025/04/05/mltt-72.html", "2025-04-05"),
