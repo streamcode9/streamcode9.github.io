@@ -25,11 +25,49 @@
             color: #d9534f;
             font-weight: bold;
         }
+
+        .leaflet-control-location {
+            background-color: #ffffff;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 34px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            user-select: none;
+        }
+        .leaflet-control-location:hover {
+            background-color: #f4f4f4;
+        }
+        .leaflet-control-location:active {
+            transform: scale(0.95);
+        }
+        
+        /* Location message toast styling */
+        .location-toast {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: rgba(40, 40, 40, 0.9);
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            display: none;
+            pointer-events: none;
+        }
     </style>
 </head>
 <body>
 
 <div id="map"></div>
+<div id="toast" class="location-toast"></div>
 
 <!-- Подключение JavaScript Leaflet -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -146,7 +184,83 @@
     // Автоматический подгон масштаба под все объекты
     var group = new L.featureGroup([...markers, walkPolyline1, transitPolyline, walkPolyline2]);
     map.fitBounds(group.getBounds(), { padding: [30, 30] });
+
+    // User Location Markers and Circles
+    var userLocationMarker = null;
+    var userLocationCircle = null;
+
+    // Helper function for toast messages
+    function showToast(message) {
+        var toast = document.getElementById('toast');
+        toast.innerText = message;
+        toast.style.display = 'block';
+        setTimeout(function() {
+            toast.style.display = 'none';
+        }, 4000);
+    }
+
+    // Custom Leaflet Control for User Location Button
+    var LocationControl = L.Control.extend({
+        options: {
+            position: 'topleft'
+        },
+        onAdd: function (map) {
+            var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-location');
+            container.innerHTML = '🎯';
+            container.title = 'Показать мое местоположение';
+            
+            L.DomEvent.disableClickPropagation(container);
+            
+            container.onclick = function() {
+                showToast("Определение геолокации...");
+                map.locate({ 
+                    setView: true, 
+                    maxZoom: 16, 
+                    enableHighAccuracy: true 
+                });
+            };
+            
+            return container;
+        }
+    });
+
+    // Add control to map
+    map.addControl(new LocationControl());
+
+    // Handle successfully found location
+    map.on('locationfound', function(e) {
+        var radius = e.accuracy / 2;
+
+        // Remove old user location layers if re-triggered
+        if (userLocationMarker) {
+            map.removeLayer(userLocationMarker);
+        }
+        if (userLocationCircle) {
+            map.removeLayer(userLocationCircle);
+        }
+
+        // Draw accuracy circle
+        userLocationCircle = L.circle(e.latlng, radius, {
+            color: '#136AEC',
+            fillColor: '#136AEC',
+            fillOpacity: 0.15,
+            weight: 1
+        }).addTo(map);
+
+        // Draw user position marker dot
+        userLocationMarker = L.circleMarker(e.latlng, {
+            color: '#FFFFFF',
+            fillColor: '#136AEC',
+            fillOpacity: 1,
+            weight: 3,
+            radius: 8
+        }).addTo(map).bindPopup("<b>Вы здесь</b><br>Точность: " + Math.round(e.accuracy) + " м").openPopup();
+    });
+
+    // Handle location detection errors
+    map.on('locationerror', function(e) {
+        showToast("Не удалось определить местоположение: " + e.message);
+    });
 </script>
 </body>
 </html>
-
