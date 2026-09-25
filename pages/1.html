@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маршрут по Стокгольму</title>
+    <!-- Подключение CSS Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .popup-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        .popup-time {
+            color: #d9534f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- Подключение JavaScript Leaflet -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    // Инициализация карты с центром в Стокгольме
+    var map = L.map('map').setView([59.332, 18.060], 14);
+
+    // Подключение слоя тайлов OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Точки маршрута
+    var waypoints = [
+        {
+            name: "1. Science Fiction Bokhandeln",
+            coords: [59.32426, 18.07005],
+            time: "12:00–12:30",
+            address: "Västerlånggatan 48",
+            desc: "Gaming, Minecraft, fantasy. Открыт до 19:00."
+        },
+        {
+            name: "2. Stadsmission Second Hand",
+            coords: [59.32498, 18.07255],
+            time: "~13:00",
+            address: "Köpmangatan 15",
+            desc: "Винтаж: одежда, украшения, книги, предметы интерьера. Открыт до 18:00."
+        },
+        {
+            name: "3. Прогулка: Gamla Stan → Norrbro",
+            coords: [59.32765, 18.07085],
+            time: "~13:30–14:15",
+            address: "Gamla Stan / Norrbro",
+            desc: "Пешая прогулка мимо Королевского дворца и через мост Norrbro к Kungsträdgården."
+        },
+        {
+            name: "4. Uniqlo King's Garden",
+            coords: [59.33256, 18.07164],
+            time: "~14:15",
+            address: "Hamngatan 27",
+            desc: "Шоппинг у парка Kungsträdgården. Открыт до 19:30."
+        },
+        {
+            name: "5. Café Pascal",
+            coords: [59.34241, 18.05370],
+            time: "~15:30",
+            address: "Norrtullsgatan 4 (Odenplan)",
+            desc: "Specialty coffee, отдых. Открыт до 18:00/19:00."
+        },
+        {
+            name: "6. Take Ramen",
+            coords: [59.33924, 18.03789],
+            time: "~16:30–17:00",
+            address: "Gästrikegatan 2",
+            desc: "Финал маршрута, рамен. Открыт до 21:00."
+        }
+    ];
+
+    // Добавление маркеров на карту
+    var markers = [];
+    waypoints.forEach(function(pt) {
+        var marker = L.marker(pt.coords).addTo(map);
+        marker.bindPopup(`
+            <div class="popup-title">${pt.name}</div>
+            <div class="popup-time">🕒 ${pt.time}</div>
+            <div>📍 ${pt.address}</div>
+            <div style="margin-top: 4px; font-size: 12px; color: #555;">${pt.desc}</div>
+        `);
+        markers.push(marker);
+    });
+
+    // 1. Пешеходный участок в Старом городе (Gamla Stan → Uniqlo)
+    var walkCoords1 = [
+        [59.32426, 18.07005], // SF Bokhandeln
+        [59.32498, 18.07255], // Stadsmission
+        [59.32680, 18.07180], // Королевский дворец
+        [59.32765, 18.07085], // Мост Norrbro
+        [59.33080, 18.07150], // Kungsträdgården
+        [59.33256, 18.07164]  // Uniqlo
+    ];
+
+    var walkPolyline1 = L.polyline(walkCoords1, {
+        color: '#2A81CB',
+        weight: 4,
+        opacity: 0.8
+    }).addTo(map);
+
+    // 2. Общественный транспорт (Uniqlo → Odenplan / Café Pascal)
+    var transitCoords = [
+        [59.33256, 18.07164], // Uniqlo
+        [59.33310, 18.06210], // T-Centralen / Станция метро
+        [59.34241, 18.05370]  // Café Pascal (Odenplan)
+    ];
+
+    var transitPolyline = L.polyline(transitCoords, {
+        color: '#E67E22',
+        weight: 4,
+        opacity: 0.8,
+        dashArray: '8, 8' // Пунктир для транспорта
+    }).addTo(map);
+
+    // 3. Короткий пеший переход (Café Pascal → Take Ramen)
+    var walkCoords2 = [
+        [59.34241, 18.05370], // Café Pascal
+        [59.33924, 18.03789]  // Take Ramen
+    ];
+
+    var walkPolyline2 = L.polyline(walkCoords2, {
+        color: '#2A81CB',
+        weight: 4,
+        opacity: 0.8
+    }).addTo(map);
+
+    // Автоматический подгон масштаба под все объекты
+    var group = new L.featureGroup([...markers, walkPolyline1, transitPolyline, walkPolyline2]);
+    map.fitBounds(group.getBounds(), { padding: [30, 30] });
+</script>
+</body>
+</html>
